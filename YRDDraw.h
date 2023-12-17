@@ -6,6 +6,7 @@
 //We don't want YR++ to depend on the DirectX7 SDK (yet), so
 //here are a few definitions taken from the MSDN:
 
+#ifndef DIRECTDRAW_VERSION
 //DDPIXELFORMAT
 typedef struct _DDPIXELFORMAT {
   DWORD  dwSize;
@@ -52,6 +53,7 @@ union {
   DWORD  dwYUVZBitMask;
 } ;
 } DDPIXELFORMAT, FAR* LPDDPIXELFORMAT;
+#endif
 
 //DDSCAPS2
 typedef struct _DDSCAPS2 {
@@ -61,11 +63,13 @@ typedef struct _DDSCAPS2 {
   DWORD  dwCaps4;
 } DDSCAPS2, FAR* LPDDSCAPS2;
 
+#ifndef DIRECTDRAW_VERSION
 //DDCOLORKEY
 typedef struct _DDCOLORKEY{
   DWORD dwColorSpaceLowValue;
   DWORD dwColorSpaceHighValue;
 } DDCOLORKEY,FAR *LPDDCOLORKEY;
+#endif
 
 //DDSURFACEDESC2
 typedef struct _DDSURFACEDESC2 {
@@ -101,6 +105,7 @@ typedef struct _DDSURFACEDESC2 {
   DWORD  dwTextureStage;
 } DDSURFACEDESC2;
 
+#ifndef DIRECTDRAW_VERSION
 //IDirectDrawSurface
 interface IDirectDrawSurface;
 
@@ -183,6 +188,7 @@ public:
 	eDDCoopLevel(int val) { this->_ = static_cast<E>(val); };
 	operator int() { return this->_; };
 };
+#endif
 
 class DirectDrawWrap {
 public:
@@ -218,7 +224,11 @@ public:
 	virtual HRESULT __stdcall GetVerticalBlankStatus(/* LPBOOL */DWORD);
 	virtual HRESULT __stdcall Initialize(GUID *);
 	virtual HRESULT __stdcall RestoreDisplayMode();
+#ifdef DIRECTDRAW_VERSION
+	virtual HRESULT __stdcall SetCooperativeLevel(HWND, DWORD);
+#else
 	virtual HRESULT __stdcall SetCooperativeLevel(HWND, eDDCoopLevel);
+#endif
 	virtual HRESULT __stdcall SetDisplayMode(DWORD Width, DWORD Height, DWORD BitDepth);
 	virtual HRESULT __stdcall WaitForVerticalBlank(DWORD, HANDLE);
 
