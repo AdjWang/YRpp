@@ -30,8 +30,8 @@ public:
 	}
 
 protected:
-  int field_0;
-  int field_4;
+  int MouseClickPos_x;
+  int MouseClickPos_y;
   int field_8;
   int field_C;
   int field_10;
