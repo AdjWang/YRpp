@@ -53,7 +53,6 @@ union {
   DWORD  dwYUVZBitMask;
 } ;
 } DDPIXELFORMAT, FAR* LPDDPIXELFORMAT;
-#endif
 
 //DDSCAPS2
 typedef struct _DDSCAPS2 {
@@ -63,13 +62,11 @@ typedef struct _DDSCAPS2 {
   DWORD  dwCaps4;
 } DDSCAPS2, FAR* LPDDSCAPS2;
 
-#ifndef DIRECTDRAW_VERSION
 //DDCOLORKEY
 typedef struct _DDCOLORKEY{
   DWORD dwColorSpaceLowValue;
   DWORD dwColorSpaceHighValue;
 } DDCOLORKEY,FAR *LPDDCOLORKEY;
-#endif
 
 //DDSURFACEDESC2
 typedef struct _DDSURFACEDESC2 {
@@ -105,7 +102,6 @@ typedef struct _DDSURFACEDESC2 {
   DWORD  dwTextureStage;
 } DDSURFACEDESC2;
 
-#ifndef DIRECTDRAW_VERSION
 //IDirectDrawSurface
 interface IDirectDrawSurface;
 
