@@ -63,7 +63,7 @@ public:
 	virtual void func_40(DSurface* pSurface, bool bUnk)
 		{ JMP_THIS(0x7B92D0); }
 
-	virtual void func_44(int *arg1, int *arg2)
+	virtual void LimitMousePos(int *x, int *y)
 		{ JMP_THIS(0x7B9D90); }
 
 public:
