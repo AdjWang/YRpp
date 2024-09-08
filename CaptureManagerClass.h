@@ -6,6 +6,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 class HouseClass;
 class TechnoClass;
 
@@ -94,3 +96,5 @@ public:
 	TechnoClass* Owner;
 	int OverloadDamageDelay; // Decremented every frame. If it reaches zero, OverloadDamage is applied.
 };
+
+} // namespace yrpp

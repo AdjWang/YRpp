@@ -5,6 +5,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 struct Theater //US English spelling to keep it consistent with the game
 {
 public:
@@ -48,3 +50,5 @@ public:
 	int		unknown_int_68;
 	int		unknown_int_6C;
 };
+
+} // namespace yrpp

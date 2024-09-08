@@ -1,5 +1,7 @@
 #pragma once
 
+namespace yrpp {
+
 // these classes handle alliances between players, eg Team:A B C D in the frontend
 
 class MPTeam
@@ -84,3 +86,5 @@ public:
 		: MPTeam(noinit_t())
 	{ JMP_THIS(0x5C9470); }
 };
+
+} // namespace yrpp

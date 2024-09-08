@@ -5,6 +5,8 @@
 #include <FileFormats/SHP.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class ProgressScreenClass {
 public:
 
@@ -48,3 +50,5 @@ public:
 protected:
 	ProgressScreenClass(){};
 };
+
+} // namespace yrpp

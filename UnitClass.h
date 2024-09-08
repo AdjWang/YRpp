@@ -7,6 +7,8 @@
 #include <FootClass.h>
 #include <UnitTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class EBolt;
 
@@ -123,3 +125,5 @@ public:
 
 	wchar_t ToolTipText[0x100];
 };
+
+} // namespace yrpp

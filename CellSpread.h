@@ -2,6 +2,8 @@
 
 #include <GeneralStructures.h>
 
+namespace yrpp {
+
 class CellSpread
 {
 public:
@@ -37,3 +39,5 @@ public:
 		return GetDistance(offset.X, offset.Y);
 	};
 };
+
+} // namespace yrpp

@@ -4,6 +4,8 @@
 #include <GeneralDefinitions.h>
 #include <Interfaces.h>
 
+namespace yrpp {
+
 namespace WOLAPI {
 	// Forward references and typedefs
 	interface IRTPatcher;
@@ -543,3 +545,5 @@ namespace WOLAPI {
 	};
 
 }
+
+} // namespace yrpp

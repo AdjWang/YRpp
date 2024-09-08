@@ -8,6 +8,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class PCX
 {
 protected:
@@ -39,3 +41,5 @@ public:
 
 	void *Buffer;
 };
+
+} // namespace yrpp

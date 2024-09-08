@@ -2,6 +2,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class ObjectClass;
 class TechnoClass;
@@ -126,3 +128,5 @@ public:
 	bool				Enabled;
 	PROTECTED_PROPERTY(BYTE, padding_45[3]);
 };
+
+} // namespace yrpp

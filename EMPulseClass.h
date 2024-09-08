@@ -6,6 +6,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 class NOVTABLE EMPulseClass : public AbstractClass
 {
 public:
@@ -49,3 +51,5 @@ public:
 	int CreationTime;	//frame in which this EMP got created
 	int Duration;
 };
+
+} // namespace yrpp

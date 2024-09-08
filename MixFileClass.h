@@ -4,6 +4,8 @@
 #include <ArrayClasses.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 struct MixHeaderData
 {
 	DWORD ID;
@@ -100,3 +102,5 @@ public:
 	MixHeaderData* Headers;
 	int field_24;
 };
+
+} // namespace yrpp

@@ -5,6 +5,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class SpotlightClass
 {
 public:
@@ -36,3 +38,5 @@ public:
 	int Size;
 	SpotlightFlags DisableFlags;
 };
+
+} // namespace yrpp

@@ -5,6 +5,8 @@
 #include <YRPPCore.h>
 #include <StringTable.h>
 
+namespace yrpp {
+
 typedef int eMessageBoxResult;
 #define MESSAGEBOXRESULT_OK			0
 #define MESSAGEBOXRESULT_CANCEL		1
@@ -32,3 +34,5 @@ public:
 	static eMessageBoxResult Show(const wchar_t* pMessage)
 		{ return Show(pMessage, StringTable::LoadString(GameStrings::TXT_OK), StringTable::LoadString(GameStrings::TXT_CANCEL)); }
 };
+
+} // namespace yrpp

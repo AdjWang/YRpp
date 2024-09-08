@@ -2,6 +2,8 @@
 
 #include <AbstractTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class CCINIClass;
 class HouseTypeClass;
@@ -108,3 +110,5 @@ public:
 	TEventClass* FirstEvent;
 	TActionClass* FirstAction;
 };
+
+} // namespace yrpp

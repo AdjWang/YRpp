@@ -3,6 +3,8 @@
 #include <Unsorted.h>
 #include <Objbase.h>
 
+namespace yrpp {
+
 class YRComHelpers {
 public:
 	// releases the object and clears the pointer
@@ -135,3 +137,5 @@ public:
 private:
 	int nRefCount {0};
 };
+
+} // namespace yrpp

@@ -4,6 +4,8 @@
 #include <RulesClass.h>
 #include <CRT.h>
 
+namespace yrpp {
+
 class VeinholeLogic
 {
 public:
@@ -187,3 +189,5 @@ public:
 };
 
 static_assert(sizeof(VeinholeMonsterClass) == 0x108); //264
+
+} // namespace yrpp

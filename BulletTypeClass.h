@@ -6,6 +6,8 @@
 
 #include <ObjectTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class AnimTypeClass;
 class BulletClass;
@@ -115,3 +117,5 @@ public:
 	byte AnimRate;
 	bool Flat;
 };
+
+} // namespace yrpp

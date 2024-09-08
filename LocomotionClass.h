@@ -7,6 +7,8 @@
 #include <Drawing.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class LocomotionClass : public IPersistStream, public ILocomotion
 {
 public:
@@ -214,3 +216,5 @@ __forceinline T locomotion_cast(ILocomotionPtr& comLoco)
 		"locomotion_cast: T is required to be a sub-class of LocomotionClass.");
 	return locomotion_cast<T>(comLoco.GetInterfacePtr());
 }
+
+} // namespace yrpp

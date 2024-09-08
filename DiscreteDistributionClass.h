@@ -19,6 +19,8 @@
 
 #include <utility>
 
+namespace yrpp {
+
 template <typename T>
 class DiscreteDistributionClass
 {
@@ -106,3 +108,5 @@ private:
 	DynamicVectorClass<DistributionObject<T>> Items{};
 	unsigned int TotalWeight{ 0u };
 };
+
+} // namespace yrpp

@@ -17,6 +17,8 @@ NOTE:
 #include <Wstring.h>
 #include <ArrayClasses.h>
 
+namespace yrpp {
+
 //forward declarations
 class HouseClass;
 class CCINIClass;
@@ -456,3 +458,5 @@ protected:
 	{ }
 	//FACTORY(0x7EEEA4);
 };
+
+} // namespace yrpp

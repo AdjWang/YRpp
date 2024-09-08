@@ -1,8 +1,10 @@
 #pragma once
 
-class Matrix3D;
-
 #include <YRMathVector.h>
+
+namespace yrpp {
+
+class Matrix3D;
 
 class Quaternion
 {
@@ -72,3 +74,5 @@ public:
 	float Z{ 0.0f };
 	float W{ 0.0f };
 };
+
+} // namespace yrpp

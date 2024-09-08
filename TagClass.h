@@ -2,6 +2,8 @@
 
 #include <TagTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class TriggerClass;
 
@@ -124,3 +126,5 @@ public:
 	bool IsExecuting;
 	PROTECTED_PROPERTY(BYTE, padding_36[2]);
 };
+
+} // namespace yrpp

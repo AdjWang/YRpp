@@ -1,7 +1,10 @@
 #pragma once
 
-class CCFileClass;
 #include <GeneralStructures.h>
+
+namespace yrpp {
+
+class CCFileClass;
 
 struct VoxelSectionHeader;
 struct VoxelSectionTailer;
@@ -120,3 +123,5 @@ struct VoxelSectionTailer {
 	char size_Z;
 	char NormalsMode;
 };
+
+} // namespace yrpp

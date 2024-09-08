@@ -5,6 +5,8 @@
 #include <Drawing.h>
 #include <AlphaLightingRemapClass.h>
 
+namespace yrpp {
+
 // All of those blitters can be found at 48EBF0!
 
 // All Westwood fucking jesus blitters goes here!
@@ -125,3 +127,5 @@ class x final : public Blitter
 #define DEFINE_RLE_BLITTER(x) \
 template<typename T> \
 class x final : public RLEBlitter
+
+} // namespace yrpp

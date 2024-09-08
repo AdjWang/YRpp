@@ -12,10 +12,13 @@
 #include <SlaveManagerClass.h>
 #include <TeamClass.h>
 #include <TemporalClass.h>
+#include <TransitionTimer.h>
 #include <LaserDrawClass.h>
 #include <Helpers/Template.h>
 #include <StageClass.h>
 #include <PlanningTokenClass.h>
+
+namespace yrpp {
 
 //forward declarations
 class AirstrikeClass;
@@ -730,3 +733,5 @@ public:
 	ObjectTypeClass* Disguise;
 	HouseClass*      DisguisedAsHouse;
 };
+
+} // namespace yrpp

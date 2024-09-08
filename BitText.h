@@ -2,6 +2,8 @@
 
 #include <YRPP.h>
 
+namespace yrpp {
+
 class BitFont;
 
 class BitText
@@ -25,3 +27,4 @@ public:
 		JMP_THIS(0x434CD0);
 	}
 };
+} // namespace yrpp

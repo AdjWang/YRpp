@@ -2,6 +2,8 @@
 
 #include "Blitter.h"
 
+namespace yrpp {
+
 DEFINE_RLE_BLITTER(RLEBlitTransDarkenZReadWrite)
 {
 public:
@@ -39,3 +41,5 @@ public:
 private:
 	WORD Mask;
 };
+
+} // namespace yrpp

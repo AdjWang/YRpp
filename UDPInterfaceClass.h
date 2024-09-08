@@ -1,6 +1,8 @@
 #pragma once
 #include <WinsockInterfaceClass.h>
 
+namespace yrpp {
+
 class UDPInterfaceClass : public WinsockInterfaceClass
 {
 public:
@@ -30,3 +32,5 @@ public:
 	int16_t Ports[16];
 };
 static_assert(sizeof(UDPInterfaceClass) == 0x3F5CC);
+
+} // namespace yrpp

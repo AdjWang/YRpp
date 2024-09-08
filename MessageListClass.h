@@ -12,6 +12,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 // https://github.com/electronicarts/CnC_Remastered_Collection/blob/7d496e8a633a8bbf8a14b65f490b4d21fa32ca03/REDALERT/MSGLIST.H
 class MessageListClass
 {
@@ -110,3 +112,5 @@ public:
 };
 
 static_assert(sizeof(MessageListClass) == 0x149C);
+
+} // namespace yrpp

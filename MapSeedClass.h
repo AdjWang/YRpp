@@ -4,6 +4,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 //Random map generator
 class MapSeedClass : public LoadOptionsClass
 {
@@ -107,3 +109,5 @@ public:
 private:
 	DWORD align_314;
 };
+
+} // namespace yrpp

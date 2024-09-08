@@ -2,6 +2,8 @@
 
 #include <type_traits>
 
+namespace yrpp {
+
 template <typename T>
 struct EnumFlagHelper {
 	using type = std::underlying_type_t<T>;
@@ -26,6 +28,8 @@ private:
 
 	type value;
 };
+
+} // namespace yrpp
 
 #define MAKE_ENUM_FLAGS(FLAG_ENUM_NAME) \
 	inline EnumFlagHelper<FLAG_ENUM_NAME> operator& (EnumFlagHelper<FLAG_ENUM_NAME> lhs, EnumFlagHelper<FLAG_ENUM_NAME> rhs) { \
@@ -76,4 +80,3 @@ private:
 		using type = std::underlying_type_t<FLAG_ENUM_NAME>; \
 		return static_cast<FLAG_ENUM_NAME>(~static_cast<type>(rhs)); \
 	} \
-

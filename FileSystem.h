@@ -12,6 +12,8 @@
 #include <FileFormats/_Loader.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class DSurface;
 
 struct VoxelStruct
@@ -105,3 +107,5 @@ public:
 		return ret;
 	}
 };
+
+} // namespace yrpp

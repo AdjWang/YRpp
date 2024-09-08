@@ -5,6 +5,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class NOVTABLE CCToolTip : public ToolTipManager
 {
 public:
@@ -18,3 +20,4 @@ public:
 	bool FullRedraw;
 	int Delay;
 };
+} // namespace yrpp

@@ -1,6 +1,9 @@
 #pragma once
 
 #include <TechnoTypeClass.h>
+
+namespace yrpp {
+
 class OverlayTypeClass;
 
 struct BuildingAnimStruct
@@ -314,3 +317,5 @@ public:
 	VectorClass<CoordStruct> DockingOffsets;
 private: DWORD align_1794;
 };
+
+} // namespace yrpp

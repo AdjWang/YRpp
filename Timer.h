@@ -1,4 +1,7 @@
 #pragma once
+
+namespace yrpp {
+
 template<typename T>
 concept TimerType = std::convertible_to<T, int> && requires (T t)
 {
@@ -125,3 +128,5 @@ public:
 		this->CDTimerClass::Start(rate);
 	}
 };
+
+} // namespace yrpp

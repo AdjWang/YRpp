@@ -6,6 +6,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class ConvertClass;
 struct SHPStruct;
 
@@ -245,3 +247,5 @@ public:
 	IDirectDrawSurface* VideoSurfacePtr;
 	DDSURFACEDESC2* VideoSurfaceDescription;
 };
+
+} // namespace yrpp

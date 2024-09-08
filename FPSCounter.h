@@ -1,5 +1,7 @@
 #pragma once
 
+namespace yrpp {
+
 class FPSCounter
 {
 public:
@@ -45,3 +47,5 @@ public:
 		return FPSCounter::CurrentFrameRate < GetMinFrameRate();
 	}
 };
+
+} // namespace yrpp

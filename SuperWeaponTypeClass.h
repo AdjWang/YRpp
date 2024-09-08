@@ -7,6 +7,8 @@
 #include <FileSystem.h>
 #include <AbstractTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class BuildingTypeClass;
 class ObjectClass;
@@ -90,3 +92,5 @@ public:
 	int     LineMultiplier;
 
 };
+
+} // namespace yrpp

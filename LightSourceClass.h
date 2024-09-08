@@ -6,6 +6,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 class NOVTABLE LightSourceClass : public AbstractClass
 {
 public:
@@ -67,3 +69,5 @@ public:
 	int LightVisibility;
 	bool Activated;
 };
+
+} // namespace yrpp

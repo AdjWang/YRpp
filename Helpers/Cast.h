@@ -3,6 +3,8 @@
 #include <AbstractClass.h>
 #include "VTable.h"
 
+namespace yrpp {
+
 class ObjectClass;
 class MissionClass;
 class RadioClass;
@@ -150,3 +152,5 @@ template <>
 __forceinline const FootClass* abstract_cast<const FootClass*>(const AbstractClass* pAbstract) {
 	return generic_cast<const FootClass*>(pAbstract);
 };
+
+} // namespace yrpp

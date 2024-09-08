@@ -6,6 +6,8 @@
 
 #include <ObjectTypeClass.h>
 
+namespace yrpp {
+
 class NOVTABLE TerrainTypeClass : public ObjectTypeClass
 {
 public:
@@ -62,3 +64,5 @@ public:
 	bool IsVeinhole;
 	CellStruct* FoundationData;
 };
+
+} // namespace yrpp

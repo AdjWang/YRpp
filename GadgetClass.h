@@ -2,6 +2,8 @@
 
 #include <LinkClass.h>
 
+namespace yrpp {
+
 enum class KeyModifier : int
 {
 	None = 0,
@@ -93,3 +95,5 @@ public:
 	bool Disabled;
 	GadgetFlag Flags;
 };
+
+} // namespace yrpp

@@ -3,6 +3,8 @@
 #include <GeneralStructures.h>
 #include <ObjectClass.h>
 
+namespace yrpp {
+
 class NOVTABLE BuildingLightClass : public ObjectClass
 {
 public:
@@ -53,3 +55,5 @@ public:
 	ObjectClass * FollowingObject;
 	TechnoClass * OwnerObject;
 };
+
+} // namespace yrpp

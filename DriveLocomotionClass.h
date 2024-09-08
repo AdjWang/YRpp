@@ -4,6 +4,8 @@
 
 #include <LocomotionClass.h>
 
+namespace yrpp {
+
 class NOVTABLE DriveLocomotionClass : public LocomotionClass, public IPiggyback
 {
 public:
@@ -51,3 +53,5 @@ public:
 };
 
 static_assert(sizeof(DriveLocomotionClass) == 0x70);
+
+} // namespace yrpp

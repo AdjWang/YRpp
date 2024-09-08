@@ -7,6 +7,8 @@
 #include <ObjectClass.h>
 #include <ParticleTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class ParticleSystemClass;
 
@@ -85,3 +87,5 @@ public:
 	BYTE   unknown_131;
 	PROTECTED_PROPERTY(DWORD,        unused_134); //??
 };
+
+} // namespace yrpp

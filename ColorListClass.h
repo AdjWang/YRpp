@@ -2,6 +2,8 @@
 
 #include <ListClass.h>
 
+namespace yrpp {
+
 class NOVTABLE ColorListClass : public ListClass
 {
 public:
@@ -30,3 +32,4 @@ public:
 	int Style; // ?
 	int SelectColor; // ??
 };
+} // namespace yrpp

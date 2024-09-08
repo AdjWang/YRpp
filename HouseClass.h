@@ -14,6 +14,8 @@
 #include <UnitClass.h>
 #include <UnitTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class AnimClass;
 class BulletClass;
@@ -1013,3 +1015,5 @@ public:
 	int TotalOwnedAircraftCost;
 	DWORD unknown_power_160B4;
 };
+
+} // namespace yrpp

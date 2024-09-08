@@ -6,6 +6,8 @@
 #include <AbstractClass.h>
 #include <Memory.h>
 
+namespace yrpp {
+
 //forward declarations
 class CCINIClass;
 
@@ -80,3 +82,5 @@ public:
 	const wchar_t* UIName;
 	char Name [0x31];
 };
+
+} // namespace yrpp

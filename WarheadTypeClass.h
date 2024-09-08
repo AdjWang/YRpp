@@ -6,6 +6,8 @@
 
 #include <AbstractTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class AnimTypeClass;
 class ParticleTypeClass;
@@ -126,3 +128,5 @@ public:
 	int     MinDebris;
 	PROTECTED_PROPERTY(DWORD, unused_1CC); //???
 };
+
+} // namespace yrpp

@@ -10,6 +10,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 struct VocClassHeader {
 	VocClassHeader* Next;
 	VocClassHeader* Prev;
@@ -118,3 +120,5 @@ public:
 	VocClass() = delete;
 	~VocClass() = delete;
 };
+
+} // namespace yrpp

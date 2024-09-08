@@ -12,6 +12,8 @@
 #define CSF_VALUE_SIGNATURE 0x53545220 //" RTS"
 #define CSF_EXVALUE_SIGNATURE 0x53545257 //"WRTS"
 
+namespace yrpp {
+
 enum class CSFLanguages : unsigned int {
 	US = 0,
 	UK = 1,
@@ -125,3 +127,5 @@ public:
 	static void Unload()
 		{ JMP_STD(0x734D30); }
 };
+
+} // namespace yrpp

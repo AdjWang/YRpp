@@ -11,6 +11,8 @@
 #include <Helpers/CompileTime.h>
 #include <Surface.h>
 
+namespace yrpp {
+
 #pragma pack(push, 1)
 class RGBClass
 {
@@ -379,3 +381,5 @@ union VoxelIndexKey
 };
 
 static_assert(sizeof(VoxelIndexKey) == sizeof(int));
+
+} // namespace yrpp

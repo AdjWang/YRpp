@@ -2,6 +2,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 class TechnoClass;
 
 class PlanningBranchClass;
@@ -63,3 +65,5 @@ public:
 	bool field_99;
 };
 static_assert(sizeof(PlanningTokenClass) == 0x9C);
+
+} // namespace yrpp

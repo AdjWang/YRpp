@@ -6,6 +6,8 @@
 #include <TechnoTypeClass.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class INIClass;
 
 struct Variable
@@ -261,3 +263,5 @@ public:
 	char LS800BkgdName [0x40];
 	char LS800BkgdPal [0x40];
 };
+
+} // namespace yrpp

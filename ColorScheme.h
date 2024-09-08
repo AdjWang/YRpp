@@ -9,6 +9,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class LightConvertClass;
 
 class ColorScheme
@@ -83,3 +85,5 @@ public:
 	int   MainShadeIndex;
 	PROTECTED_PROPERTY(BYTE,     unknown_334[0x8]);
 };
+
+} // namespace yrpp

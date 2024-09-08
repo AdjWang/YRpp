@@ -3,6 +3,8 @@
 #include <ArrayClasses.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class IPXConnClass;
 class IPXGlobalConnClass;
 class ConnectionClass;
@@ -66,3 +68,5 @@ public:
 	DWORD BadConnection;
 };
 static_assert(sizeof(IPXManagerClass) == 0xAC);
+
+} // namespace yrpp

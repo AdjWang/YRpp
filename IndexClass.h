@@ -3,6 +3,8 @@
 #include <YRPPCore.h>
 #include <GenericList.h>
 
+namespace yrpp {
+
 /*
 * IndexClass, most impl from CCR
 * --secsome
@@ -277,3 +279,5 @@ typename IndexClass<TKey, TValue>::NodeElement const* IndexClass<TKey, TValue>::
 	//return std::lower_bound(&IndexTable[0], &IndexTable[IndexCount], node);
 	return static_cast<const NodeElement*>(std::bsearch(&node, &IndexTable[0], IndexCount, sizeof(IndexTable[0]), Comparator));
 }
+
+} // namespace yrpp

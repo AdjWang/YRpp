@@ -2,6 +2,8 @@
 
 #include <TeamTypeClass.h>
 
+namespace yrpp {
+
 class HouseClass;
 class FootClass;
 class CellClass;
@@ -101,3 +103,5 @@ public:
 
 	int CountObjects [6]; // counts of each object specified in the Type
 };
+
+} // namespace yrpp

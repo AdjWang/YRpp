@@ -2,6 +2,8 @@
 
 #include <GeneralDefinitions.h>
 
+namespace yrpp {
+
 struct TransitionTimer
 {
 public:
@@ -53,3 +55,5 @@ public:
 	bool        State1;
 	bool        State2;
 };
+
+} // namespace yrpp

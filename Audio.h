@@ -3,6 +3,8 @@
 #include <GeneralDefinitions.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class RawFileClass;
 class CCFileClass;
 class VocClass;
@@ -155,3 +157,5 @@ struct AudioController
 	void sub_406310()
 		{ JMP_THIS(0x406310); }
 };
+
+} // namespace yrpp

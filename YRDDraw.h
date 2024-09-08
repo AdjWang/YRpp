@@ -3,6 +3,8 @@
 #include <YRPPCore.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 //We don't want YR++ to depend on the DirectX7 SDK (yet), so
 //here are a few definitions taken from the MSDN:
 
@@ -232,3 +234,5 @@ public:
 
 };
 
+
+} // namespace yrpp

@@ -2,6 +2,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class Randomizer
 {
 public:
@@ -36,3 +38,5 @@ public:
 	int Next2; //from Table
 	DWORD Table [0xFA];
 };
+
+} // namespace yrpp

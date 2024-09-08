@@ -1,3 +1,5 @@
+namespace yrpp {
+
 /*
 	This is the Vault.
 	Put unused definitions here, be it WIP stuff or simply things there is no use for at the moment,
@@ -119,3 +121,5 @@ class Blitter
 
 
 #endif
+
+} // namespace yrpp

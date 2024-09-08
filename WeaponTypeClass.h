@@ -6,6 +6,8 @@
 
 #include <AbstractTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class AnimTypeClass;
 class BulletTypeClass;
@@ -119,3 +121,5 @@ public:
 	int RadLevel;
 	bool IsMagBeam;
 };
+
+} // namespace yrpp

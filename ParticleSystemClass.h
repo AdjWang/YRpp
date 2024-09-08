@@ -8,6 +8,8 @@
 #include <ParticleSystemTypeClass.h>
 #include <ParticleClass.h>
 
+namespace yrpp {
+
 class NOVTABLE ParticleSystemClass : public ObjectClass
 {
 public:
@@ -65,3 +67,5 @@ public:
 	bool         unknown_bool_F9;
 	HouseClass*  OwnerHouse;
 };
+
+} // namespace yrpp

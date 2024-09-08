@@ -6,6 +6,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 class NOVTABLE NeuronClass : public AbstractClass
 {
 public:
@@ -60,3 +62,5 @@ public:
 	//Properties
 	VectorClass<NeuronClass*> Neurons;	//???
 };
+
+} // namespace yrpp

@@ -6,6 +6,8 @@
 #define GAMEMD_STRING(name,addr)\
 static constexpr constant_ptr<const char,addr> const name;
 
+namespace yrpp {
+
 namespace GameStrings
 {
 	// unsorted names
@@ -75,3 +77,5 @@ namespace GameStrings
 
 #undef GAMEMD_STRING
 #endif
+
+} // namespace yrpp

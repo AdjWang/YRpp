@@ -6,6 +6,8 @@
 
 #include <ObjectTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class AnimTypeClass;
 
@@ -78,3 +80,5 @@ public:
 	ColorStruct RadarColor;
 
 };
+
+} // namespace yrpp

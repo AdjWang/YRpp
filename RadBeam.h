@@ -4,6 +4,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class TechnoClass;
 
 class RadBeam
@@ -78,3 +80,5 @@ public:
 	byte unknown_C0;
 	DWORD unknown_C4;
 };
+
+} // namespace yrpp

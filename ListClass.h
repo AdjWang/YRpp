@@ -5,6 +5,8 @@
 #include <ShapeButtonClass.h>
 #include <SliderClass.h>
 
+namespace yrpp {
+
 class NOVTABLE ListClass : public ControlClass
 {
 public:
@@ -56,3 +58,4 @@ public:
 	int SelectedIndex;
 	int CurrentTopIndex;
 };
+} // namespace yrpp

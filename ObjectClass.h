@@ -11,6 +11,8 @@
 
 #include <Helpers/Template.h>
 
+namespace yrpp {
+
 struct SHPStruct;
 class LightConvertClass;
 
@@ -318,3 +320,5 @@ public:
 	CoordStruct        Location; //Absolute current 3D location (in leptons)
 	LineTrail*         LineTrailer;
  };
+
+} // namespace yrpp

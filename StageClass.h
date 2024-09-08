@@ -9,6 +9,8 @@
 
 #include <GeneralStructures.h>
 
+namespace yrpp {
+
 class StageClass
 {
 public:
@@ -53,3 +55,5 @@ public:
 	int Rate { 0 }; // how many frames it takes to increment the stage value
 	int Step { 1 }; // added to the stage value every time the timer expires
 };
+
+} // namespace yrpp

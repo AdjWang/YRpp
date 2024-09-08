@@ -7,6 +7,8 @@
 #include <ObjectClass.h>
 #include <SmudgeTypeClass.h>
 
+namespace yrpp {
+
 class NOVTABLE SmudgeClass : public ObjectClass
 {
 public:
@@ -48,3 +50,5 @@ public:
 	SmudgeTypeClass* Type;
 
 };
+
+} // namespace yrpp

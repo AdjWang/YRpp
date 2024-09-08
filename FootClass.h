@@ -7,6 +7,8 @@
 #include <TechnoClass.h>
 #include <ParasiteClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class LocomotionClass;
 class TeamClass;
@@ -218,3 +220,5 @@ public:
 };
 
 static_assert(sizeof(FootClass) == 0x6C0);
+
+} // namespace yrpp

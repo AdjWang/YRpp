@@ -2,6 +2,8 @@
 
 #include <ListClass.h>
 
+namespace yrpp {
+
 class NOVTABLE CheckListClass : public ListClass
 {
 public:
@@ -24,3 +26,4 @@ public:
 
 	bool IsReadOnly;
 };
+} // namespace yrpp

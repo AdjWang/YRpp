@@ -6,6 +6,8 @@
 
 #include <comdef.h>
 
+namespace yrpp {
+
 __interface __declspec(uuid("5FF0CA70-8B12-11D1-B708-00A024DDAFD1"))
 ISwizzle : IUnknown
 {
@@ -338,3 +340,5 @@ IPiggyback : IUnknown
 };
 
 _COM_SMARTPTR_TYPEDEF(IPiggyback, __uuidof(IPiggyback));
+
+} // namespace yrpp

@@ -6,6 +6,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 class LightSourceClass;
 class WeaponTypeClass;
 
@@ -128,3 +130,5 @@ public:
 	int               RadDuration; // as currently set up, the rad site will stay for so many frames
 	int               RadTimeLeft; // the remaining frames. divided by RadDuration gives the factor
 };
+
+} // namespace yrpp

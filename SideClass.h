@@ -6,6 +6,8 @@
 
 #include <AbstractTypeClass.h>
 
+namespace yrpp {
+
 class NOVTABLE SideClass : public AbstractTypeClass
 {
 public:
@@ -47,3 +49,5 @@ public:
 	TypeList<int> HouseTypes;	//indices!
 
 };
+
+} // namespace yrpp

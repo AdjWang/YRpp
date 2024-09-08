@@ -3,6 +3,8 @@
 #include <PowerClass.h>
 #include <StageClass.h>
 
+namespace yrpp {
+
 class ColorScheme;
 class FactoryClass;
 
@@ -143,3 +145,5 @@ public:
 	bool unknown_bool_5515;
 	PROTECTED_PROPERTY(BYTE, padding_5516[2]);
 };
+
+} // namespace yrpp

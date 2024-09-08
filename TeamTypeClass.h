@@ -8,6 +8,8 @@
 #include <ScriptTypeClass.h>
 #include <TaskForceClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class FootClass;
 class TagClass;
@@ -132,3 +134,5 @@ public:
 	bool     OnlyTargetHouseEnemy;
 
 };
+
+} // namespace yrpp

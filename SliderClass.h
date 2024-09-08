@@ -2,6 +2,8 @@
 
 #include <GaugeClass.h>
 
+namespace yrpp {
+
 class NOVTABLE SliderClass : public GaugeClass
 {
 public:
@@ -36,3 +38,4 @@ public:
 	int ThumbSize;
 	int ThumbStart;
 };
+} // namespace yrpp

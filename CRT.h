@@ -6,6 +6,8 @@
 // contains functions that are part of the C runtime library and have been declared ingame
 // just declaring them so we don't need to include our own duplicates
 
+namespace yrpp {
+
 class CRT {
 public:
 		// unicode manipulations - "wcs" stands for "wide char string" or wchar_t equivalent of "str"
@@ -179,3 +181,5 @@ public:
 		static void __cdecl makepath(char* arg1 , const char* arg2, const char* arg3 ,  const char* arg4, const char* arg5)
 			{ JMP_STD(0x7C9FF0); }
 };
+
+} // namespace yrpp

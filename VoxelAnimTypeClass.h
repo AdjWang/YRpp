@@ -6,6 +6,8 @@
 
 #include <ObjectTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class AnimTypeClass;
 class ParticleSystemTypeClass;
@@ -79,3 +81,5 @@ public:
 	bool IsTiberium;
 	PROTECTED_PROPERTY(BYTE, unused_301[3]);
 };
+
+} // namespace yrpp

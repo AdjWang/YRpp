@@ -4,6 +4,8 @@
 
 #include <ArrayClasses.h>
 
+namespace yrpp {
+
 // here be dragons(plenty)
 
 
@@ -104,4 +106,4 @@ public:
 	DWORD data{ 0 };
 };
 
-#include <Helpers/Cast.h>
+} // namespace yrpp

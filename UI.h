@@ -4,6 +4,8 @@
 #include <GeneralDefinitions.h>
 #include <Unsorted.h>
 
+namespace yrpp {
+
 class UI {
 public:
 	typedef BOOL (CALLBACK *Callback)(HWND, UINT, WPARAM, LPARAM);
@@ -29,3 +31,5 @@ public:
 	static void __fastcall RegisterWindow(HWND hWnd, LPARAM msg)
 		{ JMP_STD(0x622820); }
 };
+
+} // namespace yrpp

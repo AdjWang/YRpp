@@ -3,6 +3,8 @@
 #include <ASMMacros.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class GameOptionsClass
 {
 public:
@@ -65,3 +67,5 @@ public:
 	int unknown_int_B0;
 	int unknown_int_B4;
 };
+
+} // namespace yrpp

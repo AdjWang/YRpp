@@ -6,6 +6,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class ObjectClass;
 class TechnoClass;
@@ -480,3 +482,5 @@ public:
 	CellFlags          Flags;	//Various settings.
 	PROTECTED_PROPERTY(BYTE,     padding_144[4]);
 };
+
+} // namespace yrpp

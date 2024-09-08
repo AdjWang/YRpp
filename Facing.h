@@ -5,6 +5,8 @@
 
 #include <algorithm>
 
+namespace yrpp {
+
 class FacingClass
 {
 public:
@@ -137,3 +139,5 @@ public:
 	CDTimerClass RotationTimer;
 	DirStruct ROT;
 };
+
+} // namespace yrpp

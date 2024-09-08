@@ -2,6 +2,8 @@
 
 #include <TechnoTypeClass.h>
 
+namespace yrpp {
+
 class NOVTABLE AircraftTypeClass : public TechnoTypeClass
 {
 public:
@@ -55,3 +57,5 @@ public:
 	bool AirportBound;
 	bool Fighter;
 };
+
+} // namespace yrpp

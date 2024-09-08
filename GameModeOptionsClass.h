@@ -4,6 +4,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class StartingSlotClass;
 
 struct AISlotsStruct
@@ -43,3 +45,5 @@ public:
 	bool MCVRedeploy;
 	wchar_t MapDescription[45];
 };
+
+} // namespace yrpp

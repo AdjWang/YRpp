@@ -2,6 +2,8 @@
 
 #include <ObjectClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class IsometricTileTypeClass;
 
@@ -49,3 +51,5 @@ protected:
 public:
 	IsometricTileTypeClass* Type;
 };
+
+} // namespace yrpp

@@ -5,6 +5,8 @@
 #include <YRPPCore.h>
 #include <GenericList.h>
 
+namespace yrpp {
+
 enum class FileAccessMode : unsigned int {
 	None = 0,
 	Read = 1,
@@ -249,3 +251,5 @@ public:
 
 //TO BE CREATED WHEN NEEDED
 //class RAMFileClass : public FileClass{/*...*/};
+
+} // namespace yrpp

@@ -5,6 +5,8 @@
 #include <CCFileClass.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 struct TacticalSelectableStruct;
 class SideClass;
 class ObjectClass;
@@ -659,3 +661,5 @@ struct CheatData {
 
 // this holds four original cheats, keep that limit in mind
 static constexpr constant_ptr<CheatData, 0x825C28> OriginalCheats {};
+
+} // namespace yrpp

@@ -7,6 +7,8 @@
 #include <ObjectClass.h>
 #include <BulletTypeClass.h>
 
+namespace yrpp {
+
 class TechnoClass;
 class ObjectClass;
 class WarheadTypeClass;
@@ -153,3 +155,5 @@ public:
 	bool SpawnNextAnim;
 	int Range;
 };
+
+} // namespace yrpp

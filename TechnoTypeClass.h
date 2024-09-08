@@ -8,6 +8,8 @@
 #include <RulesClass.h>
 #include <WeaponTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class AircraftTypeClass;
 class AnimTypeClass;
@@ -515,3 +517,5 @@ public:
 	DynamicVectorClass<ColorScheme*>*           Palette; //no... idea....
 	DWORD           align_DF4;
 };
+
+} // namespace yrpp

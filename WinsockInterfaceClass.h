@@ -3,6 +3,8 @@
 #include <ArrayClasses.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 struct __declspec(align(4)) WinsockBufferType
 {
   char Header[16];
@@ -61,3 +63,5 @@ public:
 	int NetCard;
 };
 static_assert(sizeof(WinsockInterfaceClass) == 0x3F2FC);
+
+} // namespace yrpp

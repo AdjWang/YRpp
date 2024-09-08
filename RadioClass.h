@@ -6,6 +6,8 @@
 
 #include <MissionClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class TechnoClass;
 
@@ -75,3 +77,5 @@ public:
 	RadioCommand LastCommands[3]; // new command updates these
 	DECLARE_PROPERTY(VectorClass<TechnoClass*>, RadioLinks);	//Docked units etc
 };
+
+} // namespace yrpp

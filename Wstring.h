@@ -3,6 +3,8 @@
 #include <cstring>
 #include <Memory.h>
 
+namespace yrpp {
+
 struct CharTrait
 {
 	size_t Length(const char* pString) const
@@ -605,3 +607,4 @@ __declspec(selectany) const Wstring_base<TChar, TCharTrait> Wstring_base<TChar, 
 
 using Wstring = Wstring_base<char, CharTrait>;
 using WideWstring = Wstring_base<wchar_t, WCharTrait>;
+} // namespace yrpp

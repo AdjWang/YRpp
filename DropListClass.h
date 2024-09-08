@@ -3,6 +3,8 @@
 #include <EditClass.h>
 #include <ListClass.h>
 
+namespace yrpp {
+
 class NOVTABLE DropListClass : public EditClass
 {
 public:
@@ -39,3 +41,4 @@ public:
 	ShapeButtonClass SomeButton;
 	ListClass List;
 };
+} // namespace yrpp

@@ -2,6 +2,8 @@
 
 #include <GadgetClass.h>
 
+namespace yrpp {
+
 class NOVTABLE TextLabelClass : public GadgetClass
 {
 public:
@@ -33,3 +35,5 @@ public:
 	DWORD AnimPos;
 	DWORD AnimTiming;
 };
+
+} // namespace yrpp

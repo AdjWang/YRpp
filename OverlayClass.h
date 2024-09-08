@@ -36,6 +36,8 @@
 #include <ObjectClass.h>
 #include <OverlayTypeClass.h>
 
+namespace yrpp {
+
 class NOVTABLE OverlayClass : public ObjectClass
 {
 public:
@@ -77,3 +79,5 @@ public:
 
 	OverlayTypeClass* Type;
 };
+
+} // namespace yrpp

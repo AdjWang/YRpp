@@ -7,6 +7,8 @@
 #include <GeneralDefinitions.h>
 #include <StageClass.h>
 
+namespace yrpp {
+
 class LaserDrawClass
 {
 public:
@@ -50,3 +52,5 @@ public:
 	float StartIntensity;
 	float EndIntensity;
 };
+
+} // namespace yrpp

@@ -6,6 +6,8 @@
 
 #include <ObjectClass.h>
 
+namespace yrpp {
+
 class CCINIClass;
 
 class MissionControlClass
@@ -114,3 +116,5 @@ public:
 	DWORD    unknown_C4;
 	DECLARE_PROPERTY(CDTimerClass, UpdateTimer);
 };
+
+} // namespace yrpp

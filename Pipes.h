@@ -2,6 +2,8 @@
 
 #include <YRPP.h>
 
+namespace yrpp {
+
 class NOVTABLE Pipe
 {
 public:
@@ -158,3 +160,4 @@ private:
 	LCWPipe(LCWPipe& rvalue) = delete;
 	LCWPipe& operator=(LCWPipe const& pipe) = delete;
 };
+} // namespace yrpp

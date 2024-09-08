@@ -2,6 +2,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class SuperClass;
 class TechnoClass;
@@ -82,3 +84,4 @@ public:
 	char		      String[0x1C];
 	HouseClass*       House;
 };
+} // namespace yrpp

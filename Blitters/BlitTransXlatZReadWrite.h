@@ -2,6 +2,8 @@
 
 #include "Blitter.h"
 
+namespace yrpp {
+
 DEFINE_BLITTER(BlitTransXlatZReadWrite)
 {
 public:
@@ -56,3 +58,5 @@ public:
 private:
 	T* PaletteData;
 };
+
+} // namespace yrpp

@@ -1,5 +1,7 @@
 #pragma once
 
+namespace yrpp {
+
 // Why should we call it TargetClass instead of xTargetClass:
 // https://github.com/electronicarts/CnC_Remastered_Collection/blob/master/REDALERT/TARGET.H#L95
 // https://github.com/electronicarts/CnC_Remastered_Collection/blob/master/REDALERT/TARGET.H#L145
@@ -146,3 +148,5 @@ public:
 	unsigned char m_RTTI;
 };
 #pragma pack(pop)
+
+} // namespace yrpp

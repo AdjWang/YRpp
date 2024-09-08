@@ -6,6 +6,8 @@
 
 #include <AbstractTypeClass.h>
 
+namespace yrpp {
+
 struct ScriptActionNode
 {
 	int Action;
@@ -62,3 +64,5 @@ public:
 	int      ActionsCount;
 	ScriptActionNode ScriptActions [50];
 };
+
+} // namespace yrpp

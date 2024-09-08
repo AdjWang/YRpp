@@ -2,6 +2,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class GetCDClass
 {
 public:
@@ -11,3 +13,5 @@ public:
 	int Count;
 	int unknown_6C;
 };
+
+} // namespace yrpp

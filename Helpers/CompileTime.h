@@ -2,6 +2,8 @@
 
 #include <concepts>
 
+namespace yrpp {
+
 // defines a compile time pointer to a known memory address
 template <typename T, unsigned int Address>
 struct constant_ptr {
@@ -132,3 +134,5 @@ public:
 		return get()[index];
 	}
 };
+
+} // namespace yrpp

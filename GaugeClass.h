@@ -2,6 +2,8 @@
 
 #include <ControlClass.h>
 
+namespace yrpp {
+
 class NOVTABLE GaugeClass : public ControlClass
 {
 public:
@@ -39,3 +41,4 @@ public:
 	int CurrentValue;
 	int ClickDiff;
 };
+} // namespace yrpp

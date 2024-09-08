@@ -2,6 +2,8 @@
 
 #include "Blitter.h"
 
+namespace yrpp {
+
 DEFINE_BLITTER(BlitTransRemapDest)
 {
 public:
@@ -45,3 +47,5 @@ public:
 private:
 	T* RemapDest;
 };
+
+} // namespace yrpp

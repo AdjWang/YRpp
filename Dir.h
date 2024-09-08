@@ -2,6 +2,8 @@
 
 #include <bit>
 
+namespace yrpp {
+
 enum class DirType : unsigned char;
 
 // North -> 0x0000
@@ -117,3 +119,5 @@ private:
 };
 
 static_assert(sizeof(DirStruct) == 4);
+
+} // namespace yrpp

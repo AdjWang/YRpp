@@ -7,6 +7,8 @@
 #include <AbstractClass.h>
 #include <StageClass.h>
 
+namespace yrpp {
+
 class HouseClass;
 class TechnoClass;
 class TechnoTypeClass;
@@ -128,3 +130,5 @@ public:
 	bool               IsManual; // whether the current suspension state was caused by the player
 	PROTECTED_PROPERTY(BYTE, padding_72[2]);
 };
+
+} // namespace yrpp

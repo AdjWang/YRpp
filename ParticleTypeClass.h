@@ -6,6 +6,8 @@
 
 #include <ObjectTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class WarheadTypeClass;
 class RGBClass;
@@ -84,3 +86,5 @@ public:
 	BehavesLike BehavesLike;
 
 };
+
+} // namespace yrpp

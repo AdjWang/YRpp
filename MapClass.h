@@ -5,6 +5,8 @@
 #include <CellClass.h>
 #include <AnimTypeClass.h>
 
+namespace yrpp {
+
 class BulletTypeClass;
 class ObjectClass;
 class WarheadTypeClass;
@@ -549,3 +551,5 @@ public:
 	BOOL Redraws;
 	DynamicVectorClass<CellStruct> TaggedCells;
 };
+
+} // namespace yrpp

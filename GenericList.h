@@ -4,6 +4,8 @@
 
 #include <YRPPCore.h>
 
+namespace yrpp {
+
 class GenericList;
 class GenericNode
 {
@@ -105,3 +107,4 @@ public:
 	T* First() const { return (T*)GenericList::First(); }
 	T* Last() const { return (T*)GenericList::Last(); }
 };
+} // namespace yrpp

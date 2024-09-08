@@ -2,6 +2,8 @@
 
 #include <ControlClass.h>
 
+namespace yrpp {
+
 class NOVTABLE ToggleClass : public ControlClass
 {
 public:
@@ -28,3 +30,4 @@ public:
 	bool IsOn;
 	DWORD ToggleType;
 };
+} // namespace yrpp

@@ -2,6 +2,8 @@
 
 #include <YRPPCore.h>
 
+namespace yrpp {
+
 class CDDriveManagerClass
 {
 public:
@@ -47,3 +49,5 @@ public:
 protected:
 	CD() RX;
 };
+
+} // namespace yrpp

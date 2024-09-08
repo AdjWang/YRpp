@@ -2,6 +2,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 class HouseClass;
 class TechnoClass;
 
@@ -106,3 +108,5 @@ public:
 	AbstractClass* NewTarget;
 	SpawnManagerStatus Status;
 };
+
+} // namespace yrpp

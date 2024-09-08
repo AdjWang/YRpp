@@ -8,6 +8,8 @@
 
 #include <GeneralDefinitions.h>
 
+namespace yrpp {
+
 class IonBlastClass
 {
 public:
@@ -37,3 +39,5 @@ public:
 	BOOL DisableIonBeam;	//0 = no, 1 = yes
 
 };
+
+} // namespace yrpp

@@ -2,6 +2,8 @@
 
 #include <ArrayClasses.h>
 
+namespace yrpp {
+
 class AbstractClass;
 
 // encapsulates a bunch of vectors that are used for announcing invalid pointers.
@@ -32,3 +34,5 @@ public:
 
 	DynamicVectorClass<AbstractClass*> Array;
 };
+
+} // namespace yrpp

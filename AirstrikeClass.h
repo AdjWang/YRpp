@@ -2,6 +2,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class AircraftTypeClass;
 class ObjectClass;
@@ -65,3 +67,5 @@ public:
 	AircraftTypeClass* EliteAirstrikeTeamType;	//As in the INI files.
 	FootClass* FirstObject;
 };
+
+} // namespace yrpp

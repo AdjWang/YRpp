@@ -10,6 +10,8 @@
 #include <Drawing.h>
 #include <IndexClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class TechnoTypeClass;
 class HouseTypeClass;
@@ -119,3 +121,5 @@ public:
 	IndexClass<ShadowVoxelIndexKey, VoxelCacheStruct*> VoxelShadowCache;
 	IndexClass<TurretBarrelVoxelIndexKey, VoxelCacheStruct*> VoxelTurretBarrelCache;
 };
+
+} // namespace yrpp

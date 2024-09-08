@@ -5,6 +5,8 @@
 #include <Drawing.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 struct SHPStruct;
 
 class WWMouseClass
@@ -93,3 +95,5 @@ public:
 	DWORD       field_94;
 
 };
+
+} // namespace yrpp

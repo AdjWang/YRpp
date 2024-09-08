@@ -2,6 +2,8 @@
 
 #include "Blitter.h"
 
+namespace yrpp {
+
 DEFINE_RLE_BLITTER(RLEBlitTransZRemapXlat)
 {
 public:
@@ -36,3 +38,5 @@ private:
 	byte** Remap;
 	T* PaletteData;
 };
+
+} // namespace yrpp
