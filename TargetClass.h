@@ -1,5 +1,10 @@
 #pragma once
 
+#include <CellClass.h>
+#include <MapClass.h>
+
+namespace yrpp {
+
 // Why should we call it TargetClass instead of xTargetClass:
 // https://github.com/electronicarts/CnC_Remastered_Collection/blob/master/REDALERT/TARGET.H#L95
 // https://github.com/electronicarts/CnC_Remastered_Collection/blob/master/REDALERT/TARGET.H#L145
@@ -24,9 +29,6 @@ class BuildingClass;
 class FootClass;
 class BulletClass;
 class AnimClass;
-
-#include <CellClass.h>
-#include <MapClass.h>
 
 #pragma pack(push, 1)
 class TargetClass

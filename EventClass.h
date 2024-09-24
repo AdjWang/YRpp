@@ -191,6 +191,7 @@ public:
 
 		++OutList->Count;
 		OutList->Tail = (OutList->Tail + 1) & 127;
+		return true;
 	}
 
 	// Special
