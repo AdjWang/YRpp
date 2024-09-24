@@ -3,6 +3,8 @@
 #include <ControlClass.h>
 #include <GeneralStructures.h>
 
+namespace yrpp {
+
 // Accept Alpha, Digit, and other characters, ToUpper will convert alpha into upper-case
 enum class EditFlag : int
 {
@@ -47,3 +49,4 @@ public:
 	int Color;
 	bool IsReadOnly;
 };
+} // namespace yrpp

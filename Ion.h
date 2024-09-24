@@ -7,6 +7,8 @@
 
 #pragma once
 
+namespace yrpp {
+
 // === COMPLETELY STATIC CLASS === dunno yet how to define...
 
 class Ion
@@ -20,3 +22,5 @@ public:
 
 	//ChronoScreenEffect
 };
+
+} // namespace yrpp

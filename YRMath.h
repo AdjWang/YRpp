@@ -4,6 +4,8 @@
 
 #include <type_traits>
 
+namespace yrpp {
+
 #define MATH_FUNC(name, address)\
 	inline __declspec(naked) double __cdecl name(double value)\
 	{\
@@ -84,3 +86,5 @@ namespace Math
 		return value;
 	}
 };
+
+} // namespace yrpp

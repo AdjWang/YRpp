@@ -2,6 +2,8 @@
 
 // HVA file
 
+namespace yrpp {
+
 class CCFileClass;
 class Matrix3D;
 
@@ -34,3 +36,5 @@ public:
 	}
 
 };
+
+} // namespace yrpp

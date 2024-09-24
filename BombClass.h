@@ -3,6 +3,8 @@
 #include <AbstractClass.h>
 #include <Audio.h>
 
+namespace yrpp {
+
 //forward declarations
 class ObjectClass;
 class TechnoClass;
@@ -71,3 +73,5 @@ public:
 	BOOL ShouldPlayTickingSound; // seems so
 	bool Harmless; // (mostly) set to 0 on plant, 1 on detonation/removal ?
 };
+
+} // namespace yrpp

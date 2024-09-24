@@ -4,6 +4,8 @@
 #include <ArrayClasses.h>
 #include <Helpers/String.h>
 
+namespace yrpp {
+
 class FileEntryClass {
 public:
 
@@ -123,3 +125,5 @@ public:
 	FILETIME LastSaveTime; // PIDSI_LASTSAVE_DTM (13)
 	GameMode GameType; // 102
 };
+
+} // namespace yrpp

@@ -2,6 +2,8 @@
 
 #include <BasicStructures.h>
 
+namespace yrpp {
+
 /*
 *	SHP structs come in different forms: the plain file data, and a kind of
 *	reference used for caching. Usually, it is not needed to know what type a
@@ -129,3 +131,5 @@ inline const SHPFile* SHPStruct::AsFile() const {
 // defined but not used
 // static SHPStruct* SHPStruct_first=(SHPStruct*)0xB077B0;
 //==============================================
+
+} // namespace yrpp

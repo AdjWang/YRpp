@@ -9,6 +9,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 struct SessionOptionsClass
 {
 	int MPGameMode;
@@ -163,3 +165,5 @@ public:
 #pragma pack(pop)
 
 static_assert(sizeof(SessionClass) == 0x30DC);
+
+} // namespace yrpp

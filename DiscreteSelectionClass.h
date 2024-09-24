@@ -21,6 +21,8 @@
 
 #include <utility>
 
+namespace yrpp {
+
 template <typename T>
 class DiscreteSelectionClass
 {
@@ -91,3 +93,5 @@ private:
 	DynamicVectorClass<T> Items{};
 	int Rating{ 0 };
 };
+
+} // namespace yrpp

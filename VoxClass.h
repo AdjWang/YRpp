@@ -10,6 +10,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class VoxClass
 {
 public:
@@ -82,3 +84,5 @@ public:
 	bool LoadFromINI(CCINIClass *pINI)
 		{ JMP_THIS(0x752DB0) }
 };
+
+} // namespace yrpp

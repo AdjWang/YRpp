@@ -7,6 +7,8 @@
 #include <FootClass.h>
 #include <AircraftTypeClass.h>
 
+namespace yrpp {
+
 //AircraftClass
 class NOVTABLE AircraftClass : public FootClass, public IFlyControl
 {
@@ -72,3 +74,5 @@ public:
 	bool unknown_bool_6D4;
 	bool unknown_bool_6D5;
 };
+
+} // namespace yrpp

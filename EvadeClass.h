@@ -3,6 +3,8 @@
 #include <YRPP.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class NOVTABLE EvadeClass
 {
 public:
@@ -18,3 +20,4 @@ public:
 	int   CarryOverDifficulty;
 	short CarryOverStage;
 };
+} // namespace yrpp

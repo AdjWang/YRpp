@@ -148,3 +148,5 @@ public:
 	unsigned char m_RTTI;
 };
 #pragma pack(pop)
+
+} // namespace yrpp

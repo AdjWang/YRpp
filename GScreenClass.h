@@ -4,6 +4,8 @@
 #include <Interfaces.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class DSurface;
 struct RectangleStruct;
 class GadgetClass;
@@ -60,3 +62,5 @@ public:
 	int ScreenShakeY;
 	int Bitfield;	//default is 2
 };
+
+} // namespace yrpp

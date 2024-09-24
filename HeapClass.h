@@ -2,6 +2,8 @@
 
 #include <Memory.h>
 
+namespace yrpp {
+
 // The Westwood genius pointer priority queue
 template<typename T, typename Pr = std::less<T>>
 class PointerHeapClass
@@ -131,3 +133,4 @@ public:
 	T* LMost;
 	T* RMost;
 };
+} // namespace yrpp

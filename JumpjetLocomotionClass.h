@@ -4,6 +4,8 @@
 
 #include <LocomotionClass.h>
 
+namespace yrpp {
+
 class NOVTABLE JumpjetLocomotionClass : public LocomotionClass, public IPiggyback
 {
 public:
@@ -114,3 +116,5 @@ public:
 };
 
 static_assert(sizeof(JumpjetLocomotionClass) == 0x98);
+
+} // namespace yrpp

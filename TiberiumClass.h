@@ -7,6 +7,8 @@
 #include <AbstractTypeClass.h>
 #include <HeapClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class AnimTypeClass;
 class OverlayTypeClass;
@@ -138,3 +140,5 @@ public:
 	DECLARE_PROPERTY(TiberiumLogic, SpreadLogic);
 	DECLARE_PROPERTY(TiberiumLogic, GrowthLogic);
 };
+
+} // namespace yrpp

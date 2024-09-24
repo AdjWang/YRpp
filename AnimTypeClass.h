@@ -6,6 +6,8 @@
 
 #include <ObjectTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class OverlayTypeClass;
 class ParticleTypeClass;
@@ -124,3 +126,5 @@ public:
 	bool PsiWarning;
 	bool ShouldFogRemove;
 };
+
+} // namespace yrpp

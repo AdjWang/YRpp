@@ -9,6 +9,8 @@
 #include <BounceClass.h>
 #include <StageClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class AnimTypeClass;
 class BulletClass;
@@ -116,3 +118,5 @@ public:
 	DECLARE_PROPERTY(AudioController, Audio3);
 	DECLARE_PROPERTY(AudioController, Audio4);
 };
+
+} // namespace yrpp

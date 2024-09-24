@@ -8,6 +8,8 @@
 #include <YRMathVector.h>
 #include <Quaternion.h>
 
+namespace yrpp {
+
 class BounceClass
 {
 public:
@@ -60,3 +62,5 @@ public:
 	Quaternion AngularVelocity; // second quaternion as per-frame delta
 };
 
+
+} // namespace yrpp

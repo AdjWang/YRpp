@@ -6,6 +6,8 @@
 #include <ColorScheme.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 struct TacticalSelectableStruct
 {
 	TechnoClass* Techno;
@@ -121,3 +123,5 @@ public:
 	DWORD field_E14;
 
 };
+
+} // namespace yrpp

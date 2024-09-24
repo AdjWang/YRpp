@@ -2,6 +2,8 @@
 
 #include "Blitter.h"
 
+namespace yrpp {
+
 DEFINE_RLE_BLITTER(RLEBlitTransLucent25Alpha)
 {
 public:
@@ -39,3 +41,5 @@ private:
 	WORD Mask;
 	AlphaLightingRemapClass* AlphaRemapper;
 };
+
+} // namespace yrpp

@@ -4,6 +4,8 @@
 
 #include <LocomotionClass.h>
 
+namespace yrpp {
+
 class __declspec(align(4)) NOVTABLE TunnelLocomotionClass : public LocomotionClass
 {
 public:
@@ -67,3 +69,5 @@ public:
 };
 
 static_assert(sizeof(TunnelLocomotionClass) == 0x3C);
+
+} // namespace yrpp

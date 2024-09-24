@@ -4,6 +4,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class InputManagerClass {
 public:
 	static constexpr reference<InputManagerClass*, 0x87F770u> const Instance{};
@@ -40,3 +42,5 @@ protected:
   int field_314;
   int field_318;
 };
+
+} // namespace yrpp

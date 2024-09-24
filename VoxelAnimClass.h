@@ -8,6 +8,8 @@
 #include <VoxelAnimTypeClass.h>
 #include <BounceClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class HouseClass;
 class ParticleSystemClass;
@@ -68,3 +70,5 @@ public:
 	int Duration; // counting down to zero
 	PROTECTED_PROPERTY(DWORD, unused_144);
 };
+
+} // namespace yrpp

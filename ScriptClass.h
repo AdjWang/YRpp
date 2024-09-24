@@ -9,6 +9,8 @@
 //forward declarations
 #include <ScriptTypeClass.h>
 
+namespace yrpp {
+
 class NOVTABLE ScriptClass : public AbstractClass
 {
 public:
@@ -66,3 +68,5 @@ public:
 	int field_28;
 	int CurrentMission;
 };
+
+} // namespace yrpp

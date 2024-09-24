@@ -2,6 +2,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 // this refers to the "planning mode" waypoints you place with your mouse, not mapping waypoints
 class WaypointClass
 {
@@ -62,3 +64,5 @@ public:
 	int  CurrentWaypointIndex; //seems that way
 	DynamicVectorClass<WaypointClass> Waypoints; // actual path waypoints, no *
 };
+
+} // namespace yrpp

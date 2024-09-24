@@ -9,6 +9,8 @@
 #include <BuildingLightClass.h>
 #include <StageClass.h>
 
+namespace yrpp {
+
 class FactoryClass;
 class InfantryClass;
 class LightSourceClass;
@@ -346,3 +348,5 @@ public:
 
 	int BunkerState; // used in UpdateBunker and friends
 };
+
+} // namespace yrpp

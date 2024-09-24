@@ -1,6 +1,8 @@
 #pragma once
 #include <type_traits>
 
+namespace yrpp {
+
 // IMO under no circumstances should we set the vtable address for a class from vanilla game in general,
 // we do this only for pointers
 // For the addresses declare them in their class, not here. Pay attention to templated ones like DVC
@@ -26,3 +28,5 @@ namespace VTable
 	}
 }
 // Not sure if correct for all cases yet
+
+} // namespace yrpp

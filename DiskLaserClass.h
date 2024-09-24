@@ -6,6 +6,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 class LaserDrawClass;
 class TechnoClass;
 class WeaponTypeClass;
@@ -66,3 +68,5 @@ public:
 	DWORD unknown_38;
 	int Damage;
 };
+
+} // namespace yrpp

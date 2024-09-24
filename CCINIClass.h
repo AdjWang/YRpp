@@ -7,6 +7,8 @@
 #include <IndexClass.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 struct ColorStruct;
 class TechnoTypeClass;
 
@@ -400,3 +402,5 @@ public:
 	bool Digested : 1;
 	byte Digest[20];
 };
+
+} // namespace yrpp

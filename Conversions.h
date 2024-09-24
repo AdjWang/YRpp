@@ -4,6 +4,8 @@
 #include <YRPP.h>
 #include <WarheadTypeClass.h>
 
+namespace yrpp {
+
 // converters
 class Conversions
 {
@@ -66,3 +68,5 @@ public:
 	}
 
 };
+
+} // namespace yrpp

@@ -9,6 +9,8 @@
 #include <utility>
 #include <concepts>
 
+namespace yrpp {
+
 /*
  * The memory (de)allocators have to match!
  * Do not allocate memory in the DLL and hand it to the game to deallocate, or vice versa.
@@ -239,3 +241,5 @@ struct GameDeleter
 //
 //#define GAME_ALLOC_ARR(TT, Capacity, var) \
 //	var = GameCreateArray<TT>(Capacity);
+
+} // namespace yrpp

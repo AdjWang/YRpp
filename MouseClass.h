@@ -2,6 +2,8 @@
 
 #include <SidebarClass.h>
 
+namespace yrpp {
+
 class MouseCursor {
 public:
 	static constexpr reference<MouseCursor, 0x82D028u, 86u> const Cursors{};
@@ -99,3 +101,5 @@ public:
 	MouseCursorType MouseCursorLastIndex;
 	int MouseCursorCurrentFrame;
 };
+
+} // namespace yrpp

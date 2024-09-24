@@ -2,6 +2,8 @@
 
 #include <Matrix3D.h>
 
+namespace yrpp {
+
 struct Color16Struct;
 
 //used for most colors
@@ -164,3 +166,4 @@ struct LTRBStruct
 	int Right;
 	int Bottom;
 };
+} // namespace yrpp

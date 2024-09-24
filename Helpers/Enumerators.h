@@ -5,6 +5,8 @@
 
 #include <cmath>
 
+namespace yrpp {
+
 // Enumerates the objects in a linked list.
 /*
 	The next element is retrieved eagerly, thus this enumerator supports
@@ -391,3 +393,5 @@ protected:
 		}
 	}
 };
+
+} // namespace yrpp

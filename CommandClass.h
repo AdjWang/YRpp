@@ -5,6 +5,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class NOVTABLE CommandClass
 {
 public:
@@ -32,3 +34,5 @@ public:
 
 	virtual void Execute(WWKey eInput) const = 0;
 };
+
+} // namespace yrpp

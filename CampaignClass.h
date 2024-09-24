@@ -3,6 +3,8 @@
 #include <GeneralDefinitions.h>
 #include <CCINIClass.h>
 
+namespace yrpp {
+
 class NOVTABLE CampaignClass : public AbstractTypeClass {
 
 public:
@@ -30,3 +32,5 @@ public:
 	int FinalMovie;
 	wchar_t Description[128];
 };
+
+} // namespace yrpp

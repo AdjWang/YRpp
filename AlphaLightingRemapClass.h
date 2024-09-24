@@ -3,6 +3,8 @@
 #include <YRPP.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class AlphaLightingRemapClass
 {
 public:
@@ -33,3 +35,5 @@ public:
 	int IntensityCount;
 	int RefCount;
 };
+
+} // namespace yrpp

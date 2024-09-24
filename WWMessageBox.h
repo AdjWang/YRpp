@@ -4,6 +4,8 @@
 #include <StringTable.h>
 #include <GameStrings.h>
 
+namespace yrpp {
+
 class WWMessageBox
 {
 public:
@@ -39,3 +41,5 @@ public:
 private:
 	const wchar_t* Captain;
 };
+
+} // namespace yrpp

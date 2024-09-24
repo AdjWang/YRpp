@@ -2,6 +2,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class SuperClass;
 class TechnoClass;
@@ -306,3 +308,5 @@ public:
 	PROTECTED_PROPERTY(BYTE, align_8D[3]);
 	int                Value; // multipurpose
 };
+
+} // namespace yrpp

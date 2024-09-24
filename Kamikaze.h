@@ -5,6 +5,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 //forward declarations
 class AircraftClass;
 class CellClass;
@@ -45,3 +47,5 @@ public:
 	CDTimerClass UpdateTimer;
 	DynamicVectorClass<KamikazeControl*> Nodes;
 };
+
+} // namespace yrpp

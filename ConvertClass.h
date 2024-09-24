@@ -11,6 +11,8 @@
 #include <FileFormats/SHP.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class Blitter;
 class RLEBlitter;
 class RGBClass;
@@ -117,3 +119,5 @@ public:
 	bool Tinted;
 	PROTECTED_PROPERTY(BYTE, align_1B1[3]);
 };
+
+} // namespace yrpp

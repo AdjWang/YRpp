@@ -8,6 +8,8 @@
 
 #include <Facing.h>
 
+namespace yrpp {
+
 //used for cell coordinates/vectors
 using CellStruct = Vector2D<short>;
 using Point2D = Vector2D<int>;
@@ -51,3 +53,5 @@ struct NamedValue {
 		return this->Value == other.Value && *this == other.Name;
 	}
 };
+
+} // namespace yrpp

@@ -2,6 +2,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 class HouseClass;
 class InfantryClass;
 
@@ -118,3 +120,5 @@ public:
 	SlaveManagerStatus State;
 	int LastScanFrame;
 };
+
+} // namespace yrpp

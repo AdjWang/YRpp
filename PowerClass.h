@@ -2,6 +2,8 @@
 
 #include <RadarClass.h>
 
+namespace yrpp {
+
 class NOVTABLE PowerClass : public RadarClass
 {
 public:
@@ -35,3 +37,5 @@ public:
 	int PowerOutput;
 	int PowerDrain;
 };
+
+} // namespace yrpp

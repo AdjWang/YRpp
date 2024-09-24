@@ -2,6 +2,8 @@
 
 #include "Blitter.h"
 
+namespace yrpp {
+
 DEFINE_BLITTER(BlitTransZRemapXlatAlphaZReadWrite)
 {
 public:
@@ -62,3 +64,5 @@ private:
 	T* PaletteData;
 	AlphaLightingRemapClass* AlphaRemapper;
 };
+
+} // namespace yrpp

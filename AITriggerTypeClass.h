@@ -9,6 +9,8 @@
 #include <TeamTypeClass.h>
 #include <AbstractTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class TechnoTypeClass;
 class TeamTypeClass;
@@ -187,3 +189,5 @@ public:
 	int              unknown_10C;
 
 };
+
+} // namespace yrpp

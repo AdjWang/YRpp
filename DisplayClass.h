@@ -2,6 +2,8 @@
 
 #include <MapClass.h>
 
+namespace yrpp {
+
 class CCINIClass;
 class ObjectTypeClass;
 
@@ -124,3 +126,5 @@ public:
 	DWORD unknown_11E0;
 	PROTECTED_PROPERTY(DWORD, padding_11E4);
 };
+
+} // namespace yrpp

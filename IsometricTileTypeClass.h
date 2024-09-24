@@ -2,6 +2,8 @@
 
 #include <ObjectTypeClass.h>
 
+namespace yrpp {
+
 class NOVTABLE IsometricTileTypeClass : public ObjectTypeClass
 {
 public:
@@ -81,3 +83,5 @@ public:
 	bool AllowTiberium;
 	DWORD unk_308;
 };
+
+} // namespace yrpp

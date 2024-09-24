@@ -5,6 +5,8 @@
 #include <BombClass.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 //forward declarations
 class ObjectClass;
 class TechnoClass;
@@ -45,3 +47,5 @@ public:
 	DynamicVectorClass<TechnoClass *> Detectors;		//all the BombSight'ed objects currently on the map
 	int UpdateDelay; // defaults to 100, some iterators set it to 1
 };
+
+} // namespace yrpp

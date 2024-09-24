@@ -8,6 +8,8 @@
 #include <TerrainTypeClass.h>
 #include <StageClass.h>
 
+namespace yrpp {
+
 class NOVTABLE TerrainClass : public ObjectClass
 {
 public:
@@ -53,3 +55,5 @@ public:
 	RectangleStruct unknown_rect_D0;
 
 };
+
+} // namespace yrpp

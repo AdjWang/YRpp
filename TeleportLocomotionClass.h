@@ -4,6 +4,8 @@
 
 #include <LocomotionClass.h>
 
+namespace yrpp {
+
 class NOVTABLE TeleportLocomotionClass : public LocomotionClass, public IPiggyback
 {
 public:
@@ -75,3 +77,5 @@ public:
 	CDTimerClass Timer;
 	ILocomotion* Piggybackee;
 };
+
+} // namespace yrpp

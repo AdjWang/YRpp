@@ -5,6 +5,8 @@
 #include <YRPPCore.h>
 #include <Memory.h>
 
+namespace yrpp {
+
 class MemoryBuffer
 {
 public:
@@ -72,3 +74,5 @@ public:
 	int Size{ 0 };
 	bool Allocated{ false };
 };
+
+} // namespace yrpp

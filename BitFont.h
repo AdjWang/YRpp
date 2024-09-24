@@ -2,6 +2,8 @@
 
 #include <YRPP.h>
 
+namespace yrpp {
+
 class NOVTABLE BitFont
 {
 public:
@@ -77,3 +79,4 @@ public:
 	bool field_42;
 	bool field_43;
 };
+} // namespace yrpp

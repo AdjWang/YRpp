@@ -6,6 +6,8 @@
 
 #include <GeneralDefinitions.h>
 
+namespace yrpp {
+
 class UnitClass;
 
 class EBolt
@@ -57,3 +59,5 @@ public:
 	bool AlternateColor;
 
 };
+
+} // namespace yrpp

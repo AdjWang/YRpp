@@ -3,6 +3,8 @@
 #include <GeneralDefinitions.h>
 #include <YRPPCore.h>
 
+namespace yrpp {
+
 class LinkClass
 {
 public:
@@ -37,3 +39,5 @@ public:
 	LinkClass* Next;
 	LinkClass* Previous;
 };
+
+} // namespace yrpp

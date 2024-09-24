@@ -4,6 +4,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 struct LineTrailNode
 {
 	CoordStruct Position;
@@ -41,3 +43,5 @@ public:
 	int ActiveSlot;
 	LineTrailNode Trails[32];
 };
+
+} // namespace yrpp

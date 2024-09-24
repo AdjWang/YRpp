@@ -1,5 +1,7 @@
 #pragma once
 #include <Helpers/CompileTime.h>
+namespace yrpp {
+
 /*
 These globals are so important and fundamental that no other files should be
 included for them to be available.
@@ -32,3 +34,5 @@ namespace Unsorted
 	// Cell height in pixels.
 	constexpr int CellHeightInPixels = 30;
 }
+
+} // namespace yrpp

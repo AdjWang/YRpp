@@ -6,6 +6,8 @@
 
 #include <TechnoTypeClass.h>
 
+namespace yrpp {
+
 struct SubSequenceStruct
 {
 	int StartFrame;
@@ -115,3 +117,5 @@ public:
 	bool JumpJetTurn;
 private: DWORD align_ECC;
 };
+
+} // namespace yrpp

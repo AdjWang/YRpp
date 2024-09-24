@@ -2,6 +2,8 @@
 
 #include <GadgetClass.h>
 
+namespace yrpp {
+
 class NOVTABLE ControlClass : public GadgetClass
 {
 public:
@@ -28,3 +30,5 @@ public:
 	int ID;
 	GadgetClass* SendTo; // Peer
 };
+
+} // namespace yrpp

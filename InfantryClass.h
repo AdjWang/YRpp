@@ -7,6 +7,8 @@
 #include <FootClass.h>
 #include <InfantryTypeClass.h>
 
+namespace yrpp {
+
 class NOVTABLE InfantryClass : public FootClass
 {
 public:
@@ -61,3 +63,5 @@ public:
 	int            unknown_int_6E8;
 	PROTECTED_PROPERTY(DWORD, unused_6EC); //??
 };
+
+} // namespace yrpp

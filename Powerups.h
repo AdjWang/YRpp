@@ -2,6 +2,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class Powerups {
 	public:
 	// all these actually point to arrays with 0x13 items, see ePowerup for their numbering
@@ -24,3 +26,5 @@ class Powerups {
 	// index into AnimTypeClass::Array
 	static constexpr reference<int, 0x81DAD8u, 19u> const Anims{};
 };
+
+} // namespace yrpp

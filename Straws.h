@@ -2,6 +2,8 @@
 
 #include <YRPP.h>
 
+namespace yrpp {
+
 class NOVTABLE Straw
 {
 public:
@@ -138,3 +140,4 @@ private:
 	LCWStraw(LCWStraw& rvalue) = delete;
 	LCWStraw& operator=(LCWStraw const& pipe) = delete;
 };
+} // namespace yrpp

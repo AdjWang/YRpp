@@ -9,6 +9,8 @@
 
 #include <windows.h>
 
+namespace yrpp {
+
 class LimitedRegister {
 protected:
 	DWORD data;
@@ -303,3 +305,5 @@ EXPORT_FUNC(funcname)
 // CAUTION: funcname must be the same as in DEFINE_HOOK.
 #define DEFINE_HOOK_AGAIN(hook, funcname, size) \
 declhook(hook, funcname, size)
+
+} // namespace yrpp

@@ -7,6 +7,8 @@
 #define SDDTOR_NODELETE				0x00
 #define SDDTOR_DELETE				0x01
 
+namespace yrpp {
+
 enum class AbstractFlags : unsigned int
 {
 	None = 0x0,
@@ -1689,3 +1691,5 @@ enum class ZoneType : int
 #define	WW_CB_ADDITEM				0x4C2 //wParam = int index; lParam = 0
 
 #define	WW_LB_ADDITEM				0x4CD
+
+} // namespace yrpp

@@ -2,6 +2,8 @@
 
 #include <GeneralDefinitions.h>
 
+namespace yrpp {
+
 class TechnoClass;
 
 class NOVTABLE WaveClass : public ObjectClass
@@ -135,3 +137,5 @@ public:
 	DynamicVectorClass<CellClass *> Cells;
 	BYTE unknown_208 [14*4];
 };
+
+} // namespace yrpp

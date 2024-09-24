@@ -2,6 +2,8 @@
 
 #include <string>
 
+namespace yrpp {
+
 // because every project needs an own string implementation...
 
 namespace detail
@@ -87,3 +89,5 @@ private:
 
 template <size_t Capacity>
 using FixedWString = FixedString<Capacity, wchar_t>;
+
+} // namespace yrpp

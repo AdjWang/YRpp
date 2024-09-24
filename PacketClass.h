@@ -3,6 +3,8 @@
 #include <Memory.h>
 #pragma pack(push, 1)
 
+namespace yrpp {
+
 class FieldClass
 {
 public:
@@ -75,3 +77,5 @@ public:
 static_assert(sizeof(PacketClass) == 0x0C);
 
 #pragma pack(pop)
+
+} // namespace yrpp

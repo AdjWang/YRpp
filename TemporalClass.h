@@ -2,6 +2,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class SuperClass;
 class TechnoClass;
@@ -75,3 +77,5 @@ public:
 	int                WarpRemaining;
 	int                WarpPerStep;
 };
+
+} // namespace yrpp

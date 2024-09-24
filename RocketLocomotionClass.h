@@ -4,6 +4,8 @@
 
 #include <LocomotionClass.h>
 
+namespace yrpp {
+
 class NOVTABLE RocketLocomotionClass : public LocomotionClass
 {
 public:
@@ -66,3 +68,5 @@ public:
 	DWORD unknown_58;
 	DWORD unknown_5C;
 };
+
+} // namespace yrpp

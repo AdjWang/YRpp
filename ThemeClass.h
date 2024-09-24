@@ -5,6 +5,8 @@
 #include <Helpers/String.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class AudioStream;
 
 struct ThemeControl
@@ -82,3 +84,4 @@ public:
 	DynamicVectorClass<ThemeClass*> Themes; // the list of all themes
 	AudioStream* Stream;
 };
+} // namespace yrpp

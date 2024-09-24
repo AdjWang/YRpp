@@ -3,6 +3,8 @@
 #include <ASMMacros.h>
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class CRCEngine
 {
 public:
@@ -158,3 +160,5 @@ public:
 		char Buffer[sizeof(int)];
 	} StagingBuffer;
 };
+
+} // namespace yrpp

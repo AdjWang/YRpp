@@ -4,6 +4,8 @@
 #include <GeneralDefinitions.h>
 #include <Helpers\CompileTime.h>
 
+namespace yrpp {
+
 //forward declarations
 class AbstractClass;
 class AircraftTypeClass;
@@ -947,3 +949,4 @@ public:
 	float				 FallBackCoefficient;
 };
 #pragma pack(pop)
+} // namespace yrpp

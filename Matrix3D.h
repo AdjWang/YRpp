@@ -6,6 +6,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 template <typename T>
 class Vector4D
 {
@@ -193,3 +195,5 @@ public:
 		float Data[12];
 	};
 };
+
+} // namespace yrpp

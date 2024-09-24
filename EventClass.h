@@ -5,6 +5,8 @@
 #include <TargetClass.h>
 #include <Unsorted.h>
 
+namespace yrpp {
+
 enum class EventType : unsigned char
 {
 	EMPTY = 0,
@@ -305,3 +307,5 @@ public:
 #pragma pack(pop)
 
 static_assert(sizeof(EventClass) == 111);
+
+} // namespace yrpp

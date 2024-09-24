@@ -6,6 +6,8 @@
 
 #include <SuperWeaponTypeClass.h>
 
+namespace yrpp {
+
 //Forward declarations
 class AnimClass;
 class HouseClass;
@@ -243,3 +245,5 @@ public:
 	static bool IsFadingOut()
 		{ CALL(0x53A120); }
 };
+
+} // namespace yrpp

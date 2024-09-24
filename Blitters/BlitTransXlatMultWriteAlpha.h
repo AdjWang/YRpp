@@ -2,6 +2,8 @@
 
 #include "Blitter.h"
 
+namespace yrpp {
+
 DEFINE_BLITTER(BlitTransXlatMultWriteAlpha)
 {
 public:
@@ -46,3 +48,5 @@ public:
 
 private:
 };
+
+} // namespace yrpp

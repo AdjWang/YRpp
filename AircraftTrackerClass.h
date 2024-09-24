@@ -5,6 +5,8 @@
 #include <GeneralStructures.h>
 #include <ArrayClasses.h>
 
+namespace yrpp {
+
 class TechnoClass;
 
 // Tracks aerial units via 20x20 vectors spread across the maps for efficient search
@@ -35,3 +37,5 @@ public:
 };
 
 static_assert(sizeof(AircraftTrackerClass) == 0x2598);
+
+} // namespace yrpp

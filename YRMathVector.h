@@ -3,6 +3,8 @@
 
 #include <math.h>
 
+namespace yrpp {
+
 /*==========================================
 ============ 2D Vector =====================
 ==========================================*/
@@ -241,3 +243,5 @@ public:
 
 template <typename T>
 const Vector3D<T> Vector3D<T>::Empty = {T(), T(), T()};
+
+} // namespace yrpp

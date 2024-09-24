@@ -2,6 +2,8 @@
 
 #include "Blitter.h"
 
+namespace yrpp {
+
 DEFINE_RLE_BLITTER(RLEBlitTransRemapDestZRead)
 {
 public:
@@ -36,3 +38,5 @@ public:
 private:
 	T* RemapDest;
 };
+
+} // namespace yrpp

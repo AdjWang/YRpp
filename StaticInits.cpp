@@ -2,6 +2,8 @@
 
 #include <YRPP.h>
 
+namespace yrpp {
+
 void SlaveManagerClass::ZeroOutSlaves() {
 	for(const auto& pNode : this->SlaveNodes) {
 		if(auto pSlave = pNode->Slave) {

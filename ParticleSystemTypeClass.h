@@ -6,6 +6,8 @@
 
 #include <ObjectTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 
 class NOVTABLE ParticleSystemTypeClass : public ObjectTypeClass
@@ -74,3 +76,5 @@ public:
 	bool     Laser;
 	bool     OneFrameLight;
 };
+
+} // namespace yrpp

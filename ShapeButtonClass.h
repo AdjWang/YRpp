@@ -2,6 +2,8 @@
 
 #include <ToggleClass.h>
 
+namespace yrpp {
+
 class ConvertClass;
 class SHPStruct;
 
@@ -57,3 +59,4 @@ public:
 	SHPStruct* ShapeData;
 	bool IsShapeLoaded;
 };
+} // namespace yrpp

@@ -2,6 +2,8 @@
 
 #include "Blitter.h"
 
+namespace yrpp {
+
 DEFINE_BLITTER(BlitTranslucent50ZeroAlpha)
 {
 public:
@@ -53,3 +55,5 @@ private:
 	T* PaletteData;
 	WORD Mask;
 };
+
+} // namespace yrpp

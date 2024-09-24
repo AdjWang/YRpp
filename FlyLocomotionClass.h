@@ -4,6 +4,8 @@
 
 #include <LocomotionClass.h>
 
+namespace yrpp {
+
 class NOVTABLE FlyLocomotionClass : public LocomotionClass
 {
 public:
@@ -72,3 +74,5 @@ public:
 	bool unknown_bool_5E;
 	bool unknown_bool_5F;
 };
+
+} // namespace yrpp

@@ -6,6 +6,8 @@
 
 #include <GeneralDefinitions.h>
 
+namespace yrpp {
+
 class RadarEventClass
 {
 public:
@@ -40,3 +42,5 @@ public:
 	bool Rotating;
 	bool Visible;
 };
+
+} // namespace yrpp

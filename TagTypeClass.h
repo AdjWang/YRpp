@@ -2,6 +2,8 @@
 
 #include <AbstractTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class CCINIClass;
 class TriggerTypeClass;
@@ -96,3 +98,5 @@ public:
 	TriggerPersistence Persistence;
 	TriggerTypeClass* FirstTrigger;
 };
+
+} // namespace yrpp

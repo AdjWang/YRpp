@@ -6,6 +6,8 @@
 
 #include <AbstractTypeClass.h>
 
+namespace yrpp {
+
 //forward declarations
 class TechnoTypeClass;
 
@@ -58,3 +60,5 @@ public:
 	bool    IsGlobal;
 	TaskForceEntryStruct Entries [0x6];
 };
+
+} // namespace yrpp

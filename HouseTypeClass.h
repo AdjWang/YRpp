@@ -7,6 +7,8 @@
 #include <AbstractTypeClass.h>
 #include <Helpers\String.h>
 
+namespace yrpp {
+
 class AircraftTypeClass;
 class InfantryTypeClass;
 class UnitTypeClass;
@@ -116,3 +118,5 @@ public:
 	bool           SmartAI; //"smart"?
 	PROTECTED_PROPERTY(BYTE, padding_1A9[7]);
 };
+
+} // namespace yrpp

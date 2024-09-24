@@ -6,6 +6,8 @@
 
 #include <ObjectTypeClass.h>
 
+namespace yrpp {
+
 class NOVTABLE SmudgeTypeClass : public ObjectTypeClass
 {
 public:
@@ -57,3 +59,5 @@ public:
 	bool Crater;
 	bool Burn;
 };
+
+} // namespace yrpp

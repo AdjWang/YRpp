@@ -2,6 +2,8 @@
 
 #include <DisplayClass.h>
 
+namespace yrpp {
+
 class NOVTABLE RadarClass : public DisplayClass
 {
 public:
@@ -92,3 +94,5 @@ public:
 	DWORD unknown_14FC;
 	CDTimerClass unknown_timer_1500;
 };
+
+} // namespace yrpp

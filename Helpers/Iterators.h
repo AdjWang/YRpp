@@ -8,6 +8,8 @@
 
 #include <Helpers/Enumerators.h>
 
+namespace yrpp {
+
 // Invokes an action on objects of a certain type in a rectangle.
 /*
 	The rectangle is defined by width and height. If width and/or height are
@@ -192,3 +194,5 @@ struct CellSpreadIterator<CellClass> {
 		}
 	}
 };
+
+} // namespace yrpp

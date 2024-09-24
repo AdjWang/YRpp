@@ -5,6 +5,8 @@
 #include <ArrayClasses.h>
 #include <IndexClass.h>
 
+namespace yrpp {
+
 struct ToolTip
 {
 	ToolTip() { JMP_THIS(0x6D1810); }
@@ -77,3 +79,4 @@ public:
 	DynamicVectorClass<ToolTip*> ToolTips;
 	IndexClass<int, ToolTip*> ToolTipIndex;
 };
+} // namespace yrpp

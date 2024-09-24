@@ -2,6 +2,8 @@
 
 #include <YRPP.h>
 
+namespace yrpp {
+
 class DSurface;
 class INIClass;
 
@@ -24,3 +26,4 @@ public:
 
 	DSurface* ImageSurface;
 };
+} // namespace yrpp

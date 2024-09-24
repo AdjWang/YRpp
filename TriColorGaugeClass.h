@@ -2,6 +2,8 @@
 
 #include <GaugeClass.h>
 
+namespace yrpp {
+
 class NOVTABLE TriColorGaugeClass : public GaugeClass
 {
 public:
@@ -29,3 +31,4 @@ public:
 	int RedLimit;
 	int YellowLimit;
 };
+} // namespace yrpp

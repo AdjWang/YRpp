@@ -7,6 +7,8 @@
 #include <IndexClass.h>
 #include <GameStrings.h>
 
+namespace yrpp {
+
 //forward declarations
 class TechnoClass;
 class HouseClass;
@@ -181,3 +183,5 @@ template<typename T>
 concept HasAbsVTable = std::is_base_of_v<AbstractClass,T> && requires {
 	{ T::AbsVTable }-> std::convertible_to<uintptr_t>;
 };
+
+} // namespace yrpp

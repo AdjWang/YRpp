@@ -2,6 +2,8 @@
 
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 class AnimClass;
 class FootClass;
 
@@ -71,3 +73,5 @@ public:
 	int             GrappleAnimDelay;
 	bool            GrappleAnimGotInvalid;
 };
+
+} // namespace yrpp

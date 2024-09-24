@@ -2,6 +2,8 @@
 
 #include <TechnoTypeClass.h>
 
+namespace yrpp {
+
 class TechnoClass;
 
 class NOVTABLE UnitTypeClass : public TechnoTypeClass
@@ -90,3 +92,5 @@ public:
 	char FiringFrames;
 	char AltImageFile [0x19];
 };
+
+} // namespace yrpp

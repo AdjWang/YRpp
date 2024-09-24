@@ -4,6 +4,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 struct SHPStruct;
 class Surface;
 
@@ -48,3 +50,5 @@ public:
 	DWORD field_5C;
 	Surface * ProgressSurface;
 };
+
+} // namespace yrpp

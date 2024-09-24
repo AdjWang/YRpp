@@ -7,6 +7,8 @@
 #include <FileSystem.h>
 #include <AbstractClass.h>
 
+namespace yrpp {
+
 class ObjectClass;
 
 class NOVTABLE AlphaShapeClass : public AbstractClass
@@ -52,3 +54,5 @@ public:
 	SHPStruct* AlphaImage;
 	bool IsObjectGone;	//Set if AttachedTo is NULL.
 };
+
+} // namespace yrpp

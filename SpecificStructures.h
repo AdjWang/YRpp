@@ -1,5 +1,7 @@
 #pragma once
 
+namespace yrpp {
+
 // this file contains a few structures representing function arguments on the stack (normally all except `this`)
 
 class WarheadTypeClass;
@@ -41,3 +43,5 @@ class FPUControl {
 			return (this->statusWord & 0x100) != 0;
 		}
 };
+
+} // namespace yrpp

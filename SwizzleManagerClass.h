@@ -6,6 +6,8 @@
 
 #include <Helpers/CompileTime.h>
 
+namespace yrpp {
+
 class SwizzlePointerClass
 {
 	DWORD unknown_0; //no idea, only found it being zero
@@ -63,3 +65,5 @@ public:
 	DynamicVectorClass<SwizzlePointerClass> Swizzles_New;
 
 };
+
+} // namespace yrpp
