@@ -57,7 +57,7 @@ virtual void alla(double malla) RX;
 
 #define R0 {return 0;}
 #define RX {}
-#define RT(type) {return type();}
+#define RT(type) {return yrpp::type();}
 
 #define NOVTABLE __declspec(novtable)
 

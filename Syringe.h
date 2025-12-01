@@ -217,6 +217,8 @@ public:
 	}
 };
 
+} // namespace yrpp
+
 //TODO: Move to CMakeLists.txt
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -231,7 +233,7 @@ public:
 //Use this for DLL export functions
 //e.g. EXPORT FunctionName(REGISTERS* R)
 #define EXPORT extern "C" __declspec(dllexport) DWORD __cdecl
-#define EXPORT_FUNC(name) extern "C" __declspec(dllexport) DWORD __cdecl name (REGISTERS *R)
+#define EXPORT_FUNC(name) extern "C" __declspec(dllexport) DWORD __cdecl name (yrpp::REGISTERS *R)
 
 
 //Handshake definitions
@@ -247,7 +249,7 @@ struct SyringeHandshakeInfo
 	char* Message;
 };
 
-#define SYRINGE_HANDSHAKE(pInfo) extern "C" __declspec(dllexport) HRESULT __cdecl SyringeHandshake(SyringeHandshakeInfo* pInfo)
+#define SYRINGE_HANDSHAKE(pInfo) extern "C" __declspec(dllexport) HRESULT __cdecl SyringeHandshake(yrpp::SyringeHandshakeInfo* pInfo)
 
 
 #if SYR_VER == 2
@@ -305,5 +307,3 @@ EXPORT_FUNC(funcname)
 // CAUTION: funcname must be the same as in DEFINE_HOOK.
 #define DEFINE_HOOK_AGAIN(hook, funcname, size) \
 declhook(hook, funcname, size)
-
-} // namespace yrpp
