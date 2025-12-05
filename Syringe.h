@@ -219,21 +219,10 @@ public:
 
 } // namespace yrpp
 
-//TODO: Move to CMakeLists.txt
-#ifdef __clang__
-#pragma clang diagnostic push
-
-#pragma clang diagnostic ignored "-Wunused-variable"
-#pragma clang diagnostic ignored "-Wunused-parameter"
-#pragma clang diagnostic ignored "-Wunused-value"
-//...
-//#pragma clang diagnostic pop
-#endif
-
 //Use this for DLL export functions
 //e.g. EXPORT FunctionName(REGISTERS* R)
 #define EXPORT extern "C" __declspec(dllexport) DWORD __cdecl
-#define EXPORT_FUNC(name) extern "C" __declspec(dllexport) DWORD __cdecl name (yrpp::REGISTERS *R)
+#define EXPORT_FUNC(name) extern "C" __declspec(dllexport) DWORD __cdecl name (REGISTERS *R)
 
 
 //Handshake definitions
@@ -249,7 +238,7 @@ struct SyringeHandshakeInfo
 	char* Message;
 };
 
-#define SYRINGE_HANDSHAKE(pInfo) extern "C" __declspec(dllexport) HRESULT __cdecl SyringeHandshake(yrpp::SyringeHandshakeInfo* pInfo)
+#define SYRINGE_HANDSHAKE(pInfo) extern "C" __declspec(dllexport) HRESULT __cdecl SyringeHandshake(SyringeHandshakeInfo* pInfo)
 
 
 #if SYR_VER == 2
@@ -271,6 +260,7 @@ __declspec(align(16)) struct hostdecl {
 #pragma pack(pop)
 
 #pragma section(".syhks00", read, write)
+#pragma section(".syhks01", read, write)
 #pragma section(".syexe00", read, write)
 namespace SyringeData {
 	namespace Hooks {
@@ -281,29 +271,38 @@ namespace SyringeData {
 	};
 };
 
-#define declhost(exename, checksum) \
+#define DECLHOST(exename, checksum) \
 namespace SyringeData { namespace Hosts { __declspec(allocate(".syexe00")) hostdecl _hst__ ## exename  { checksum, #exename }; }; };
 
-#define declhook(hook, funcname, size) \
-namespace SyringeData { namespace Hooks { __declspec(allocate(".syhks00")) hookdecl _hk__ ## hook ## funcname  {  hook, size, #funcname }; }; };
+#define DECLHOOK(hook, funcname, size) \
+namespace SyringeData { namespace Hooks { __declspec(allocate(".syhks00")) hookdecl _hk__ ## funcname  {  hook, size, #funcname }; }; };
+
+#define DECLHOOK_CASCADE(hook, funcname, size) \
+namespace SyringeData { namespace Hooks { __declspec(allocate(".syhks01")) hookdecl _hk__ ## funcname  {  hook, size, #funcname }; }; };
 
 #endif // SYR_VER == 2
 
 
 // create empty macros
-#ifndef declhost
-#define declhost(exename, checksum)
-#endif // declhost
+#ifndef DECLHOST
+#define DECLHOST(exename, checksum)
+#endif // DECLHOST
 
-#ifndef declhook
-#define declhook(hook, funcname, size)
-#endif // declhook
+#ifndef DECLHOOK
+#define DECLHOOK(hook, funcname, size)
+#endif // DECLHOOK
 
 // Defines a hook at the specified address with the specified name and saving the specified amount of instruction bytes to be restored if return to the same address is used. In addition to the injgen-declaration, also includes the function opening.
 #define DEFINE_HOOK(hook, funcname, size) \
-declhook(hook, funcname, size) \
+DECLHOOK(hook, funcname, size) \
 EXPORT_FUNC(funcname)
+
+// Define hooks that would cascading get invoked no matter previous one returns to where.
+#define DEFINE_HOOK_CASCADE(hook, funcname, size) \
+DECLHOOK_CASCADE(hook, funcname, size) \
+EXPORT_FUNC(funcname)
+
 // Does the same as DEFINE_HOOK but no function opening, use for injgen-declaration when repeating the same hook at multiple addresses.
 // CAUTION: funcname must be the same as in DEFINE_HOOK.
 #define DEFINE_HOOK_AGAIN(hook, funcname, size) \
-declhook(hook, funcname, size)
+DECLHOOK(hook, funcname, size)
