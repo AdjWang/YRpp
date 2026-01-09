@@ -501,6 +501,9 @@ public:
 		return ret;
 	}
 
+	void SetOwningHouse(const HouseClass *pHouse, bool announce)
+		{ JMP_THIS(0x7014A0); }
+
 	//Constructor
 	TechnoClass(HouseClass* pOwner) noexcept
 		: TechnoClass(noinit_t())
