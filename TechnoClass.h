@@ -504,6 +504,27 @@ public:
 	void SetOwningHouse(const HouseClass *pHouse, bool announce)
 		{ JMP_THIS(0x7014A0); }
 
+	// Example at VA:006E20D2
+	// vtb->TechnoClass__ReceiveDamage_701900(
+	// 	obj_1,
+	// 	&obj_1->Health,
+	// 	0,
+	// 	RuleClass::Instance_8871E0->C4Warhead,
+	// 	0,
+	// 	1,
+	// 	0,
+	// 	0);
+	int ReceiveDamage(
+		TechnoClass* pOwner,
+		int* pDamage,
+		int DistanceFromEpicenter,
+		void* pWarHead,
+		ObjectClass* Attacker,
+		bool IgnoreDefenses,
+		bool PreventPassengerEscape,
+		HouseClass* pAttackingHouse)
+		{ JMP_THIS(0x701900); }
+
 	//Constructor
 	TechnoClass(HouseClass* pOwner) noexcept
 		: TechnoClass(noinit_t())
