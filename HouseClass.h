@@ -605,11 +605,11 @@ public:
 	}
 
 	bool InRequiredHouses(const TechnoTypeClass* const pItem) const {
-		return pItem->InRequiredHouses(1u << this->Type->ArrayIndex2);
+		return pItem->InRequiredHouses(1u << this->Type->CountryIndex);
 	}
 
 	bool InForbiddenHouses(const TechnoTypeClass* const pItem) const {
-		return pItem->InForbiddenHouses(1u << this->Type->ArrayIndex2);
+		return pItem->InForbiddenHouses(1u << this->Type->CountryIndex);
 	}
 
 	CanBuildResult CanBuild(TechnoTypeClass const* pItem, bool buildLimitOnly, bool allowIfInProduction) const
