@@ -461,6 +461,10 @@ public:
 	int GetZPos(CoordStruct *Coords)
 		{ JMP_THIS(0x578080); }
 
+	// Called from TriggerAction::GrowShroud.
+	void GrowShroud()
+		{ JMP_THIS(0x4ACAC0); }
+
 	// these two VERY slowly reprocess the map after gapgen state changes
 	void sub_657CE0()
 		{ JMP_THIS(0x657CE0); }

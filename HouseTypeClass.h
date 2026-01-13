@@ -66,7 +66,7 @@ public:
 	FixedString<25> ParentCountry;
 	PROTECTED_PROPERTY(BYTE, align_B1[3]);
 	int            ArrayIndex;
-	int            ArrayIndex2; //dunno why
+	int            CountryIndex;
 	int            SideIndex;
 	int            ColorSchemeIndex;
 	PROTECTED_PROPERTY(DWORD, align_C4);
