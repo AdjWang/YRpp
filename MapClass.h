@@ -280,6 +280,10 @@ public:
 
 	CellClass* CellIteratorNext()
 		{ CALL(0x578290); }
+	
+	// Called from TriggerAction::RevealAllMap
+	bool MapCell(CellStruct* coord, HouseClass* house)
+		{ JMP_THIS(0x653810); }
 
 	int GetMovementZoneType(const CellStruct& MapCoords, MovementZone movementZone, bool isBridge)
 		{ JMP_THIS(0x56D230); }

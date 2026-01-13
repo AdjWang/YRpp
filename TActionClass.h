@@ -142,7 +142,7 @@ public:
 	ACTION_FUNC(Grant1ShotSW, 0x6E1BD0);
 	ACTION_FUNC(GrantPermanentSW, 0x6E1C40);
 
-	ACTION_FUNC(DiplayDropFlare, 0x6E1CC0);
+	ACTION_FUNC(DisplayDropFlare, 0x6E1CC0);
 
 	ACTION_FUNC(WinnerIs, 0x6E1DC0);
 	ACTION_FUNC(LoserIs, 0x6E1E00);
