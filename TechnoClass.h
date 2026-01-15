@@ -514,8 +514,8 @@ public:
 	// 	1,
 	// 	0,
 	// 	0);
+	// The actual damage is returned through pDamage.
 	int ReceiveDamage(
-		TechnoClass* pOwner,
 		int* pDamage,
 		int DistanceFromEpicenter,
 		void* pWarHead,

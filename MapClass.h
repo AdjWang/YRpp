@@ -459,6 +459,8 @@ public:
 	void Reveal(HouseClass* pHouse)
 		{ JMP_THIS(0x577D90); }
 
+	// Seems 577C90 is another alternative, which is called from
+	// TriggerAction::ReshroudMap from 6DEFA8.
 	void Reshroud(HouseClass* pHouse)
 		{ JMP_THIS(0x577AB0); }
 
@@ -514,6 +516,9 @@ public:
 
 	void BuildingToWall(CellStruct const& cell, HouseClass* pHouse, BuildingTypeClass* pBldType)
 		{ JMP_THIS(0x588750); }
+	
+	bool CreateCrate(CellStruct const& cell, int overlay_data)
+		{ JMP_THIS(0x56BEC0); }
 
 protected:
 	//Constructor
