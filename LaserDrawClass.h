@@ -12,6 +12,8 @@ namespace yrpp {
 class LaserDrawClass
 {
 public:
+	static constexpr constant_ptr<DynamicVectorClass<LaserDrawClass*>, 0xABC878u> const Array{};
+
 	//Constructor, Destructor
 	LaserDrawClass(const CoordStruct& source, const CoordStruct& target, const ColorStruct& innerColor,
 		const ColorStruct& outerColor, const ColorStruct& outerSpread, int duration)
