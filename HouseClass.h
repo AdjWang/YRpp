@@ -714,6 +714,12 @@ public:
 
 	void AddTracking(TechnoClass* pTechno)
 		{ JMP_THIS(0x4FF700); }
+	
+	void MindControlBase(const HouseClass* by_whom)
+		{ JMP_THIS(0x50D290); }
+
+	void RestoreMindControlledBase(const HouseClass* by_whom)
+		{ JMP_THIS(0x50D2D0); }
 
 	//Constructor
 	HouseClass(HouseTypeClass* pCountry) noexcept
