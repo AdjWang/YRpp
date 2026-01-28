@@ -88,6 +88,21 @@ public:
 
 	Point2D* ApplyMatrix_Pixel(Point2D *coords, Point2D *offset)
 		{ JMP_THIS(0x6D2070); }
+	
+	void DrawRadialIndicator()
+		{ JMP_THIS(0x6DBE20); }
+
+	void DrawBand()
+		{ JMP_THIS(0x6DA180); }
+
+	void DrawPlanningPath(bool draw_if_shrouded)
+		{ JMP_THIS(0x6DAD60); }
+	
+	void DrawDashedLine(bool draw_if_shrouded)
+		{ JMP_THIS(0x6DA9D0); }
+
+	void DrawSelecting(bool unknown)
+		{ JMP_THIS(0x6D5030); }
 
 public:
 

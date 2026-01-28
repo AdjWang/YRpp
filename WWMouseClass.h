@@ -59,7 +59,7 @@ public:
 	virtual void SetCoords(Point2D buffer)
 		{ JMP_THIS(0x7BA380); }
 
-	virtual void func_3C(DSurface* pSurface, bool bUnk)
+	virtual void DrawCursor(DSurface* pSurface, bool bUnk)
 		{ JMP_THIS(0x7B90C0); }
 
 	virtual void func_40(DSurface* pSurface, bool bUnk)
