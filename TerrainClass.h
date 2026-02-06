@@ -37,6 +37,16 @@ public:
 		: TerrainClass(noinit_t())
 	{ JMP_THIS(0x71BB90); }
 
+	RectangleStruct GetBounds() const
+	{
+		RectangleStruct rect{0, 0, 0, 0};
+		RectangleStruct* rect_ptr = &rect;
+		PUSH_REG(rect_ptr);
+		SET_REG32(ecx, this);
+		CALL(0x71D160);
+		return rect;
+	}
+
 protected:
 	explicit __forceinline TerrainClass(noinit_t) noexcept
 		: ObjectClass(noinit_t())

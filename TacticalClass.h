@@ -104,6 +104,10 @@ public:
 	void DrawSelecting(bool unknown)
 		{ JMP_THIS(0x6D5030); }
 
+	void DrawTerrain(bool override_needs_redraw, const RectangleStruct& from,
+					 const RectangleStruct& to)
+		{ JMP_THIS(0x6D97D0); }
+
 public:
 
 	wchar_t ScreenText[64];

@@ -377,6 +377,17 @@ public:
 
 	bool IsClearToMove(SpeedType speedType, bool ignoreInfantry, bool ignoreVehicles, int zone, MovementZone movementZone, int level, bool isBridge)
 		{ JMP_THIS(0x4834A0); }
+	
+	// Return offset in screen space.
+	Point2D GetOverlayLocationOffset() const
+	{
+		Point2D location{0, 0};
+		Point2D* location_ptr = &location;
+		PUSH_REG(location_ptr);
+		SET_REG32(ecx, this);
+		CALL(0x480110);
+		return location;
+	}
 
 protected:
 	//Constructor
