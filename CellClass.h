@@ -37,6 +37,10 @@ public:
 	// see ABC5DC, AC13BC
 	static constexpr int BridgeHeight = BridgeLevels * Unsorted::LevelHeight;
 
+	// apply if IsoTileTypeIndex == 0xFFFF
+	// see 4803DE
+	static constexpr reference<int, 0xAA10B0> const DefaultIsoType { };
+
 	//IPersist
 	virtual HRESULT __stdcall GetClassID(CLSID* pClassID) R0;
 
