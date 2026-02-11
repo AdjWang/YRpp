@@ -231,7 +231,7 @@ public:
 		return GetCellAt(cell);
 	}
 
-	CellClass* GetTargetCell(Point2D& location)
+	CellClass* GetTargetCell(const CoordStruct& lepton)
 		{ JMP_THIS(0x565730); }
 
 	bool CellExists(const CellStruct &MapCoords) const {
@@ -374,6 +374,10 @@ public:
 
 	bool IsWithinUsableArea(const CoordStruct& coords) const
 		{ JMP_THIS(0x5785F0); }
+
+	// Is coords(in lepton) within valid map area, including invisible cells.
+	bool IsWithinValidArea(const CoordStruct& coords) const
+		{ JMP_THIS(0x568350); }
 
 	bool CoordinatesLegal(const CellStruct& cell) const
 		{ JMP_THIS(0x568300); }

@@ -267,7 +267,7 @@ public:
 		{ return this->ContainsBridge() ? this->AltObject : this->FirstObject; }
 
 	int GetLevel() const
-		{ return this->Level + (this->ContainsBridge() ? BridgeLevels : 0); }
+		{ return this->Height + (this->ContainsBridge() ? BridgeLevels : 0); }
 
 	// tilesets
 #define ISTILE(tileset, addr) \
@@ -464,8 +464,8 @@ public:
 
 	char               unknown_118;
 	char               IsIceGrowthAllowed;
-	char               Height;
-	char               Level;
+	char               CellIdx;
+	char               Height;		// 104(Unsorted::LevelHeight) leptons per height
 
 	BYTE               SlopeIndex;  // this + 2 == cell's slope shape as reflected by PLACE.SHP
 	BYTE               unknown_11D;
