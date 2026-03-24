@@ -93,10 +93,8 @@ public:
 	BYTE field_12F;
 	DWORD WaveIntensity; // for sonic/magna only
 	DWORD field_134;
-	DWORD field_138;
-	DWORD field_13C;
-	DWORD field_140;
-	DWORD field_144;
+	double SectionEnd;
+	double SectionStart;
 	DWORD field_148;
 	DWORD field_14C;
 	DWORD field_150;

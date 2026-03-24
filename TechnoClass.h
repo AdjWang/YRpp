@@ -182,6 +182,7 @@ public:
 
 	//ObjectClass
 	virtual bool Limbo() override JMP_THIS(0x6F6AC0);
+	virtual CoordStruct* GetFLH(CoordStruct* pDest, int idxWeapon, CoordStruct BaseCoords) const override JMP_THIS(0x6F3AD0);
 
 	//TechnoClass
 	virtual bool IsUnitFactory() const R0;
