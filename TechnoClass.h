@@ -320,7 +320,7 @@ public:
 	virtual void SetDestination(AbstractClass* pDest, bool bUnk) RX;
 	virtual bool EnterIdleMode(bool initial, bool unused) R0;
 	virtual void UpdateSight(DWORD dwUnk, DWORD dwUnk2, DWORD dwUnk3, DWORD dwUnk4, DWORD dwUnk5) RX;
-	virtual void vt_entry_48C(DWORD dwUnk, DWORD dwUnk2, DWORD dwUnk3, DWORD dwUnk4) RX;
+	virtual void ClearSight(DWORD dwUnk, DWORD dwUnk2, DWORD dwUnk3, DWORD dwUnk4) RX;
 	virtual bool ForceCreate(CoordStruct& coord, DWORD dwUnk = 0) R0;
 	virtual void RadarTrackingStart() RX;
 	virtual void RadarTrackingStop() RX;
@@ -598,7 +598,7 @@ public:
 	DECLARE_PROPERTY(StageClass, CloakProgress); // phase from [opaque] -> [fading] -> [transparent] , [General]CloakingStages= long
 	DECLARE_PROPERTY(CDTimerClass, CloakDelayTimer); // delay before cloaking again
 	float            WarpFactor; // don't ask! set to 0 in CTOR, never modified, only used as ((this->Fetch_ID) + this->WarpFactor) % 400 for something in cloak ripple
-	bool             unknown_bool_250;
+	bool             HasLastSight;
 	CoordStruct      LastSightCoords;
 	int              LastSightRange;
 	int              LastSightHeight;

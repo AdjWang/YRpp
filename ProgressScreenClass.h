@@ -18,8 +18,13 @@ public:
 	int GetSide()
 		{ JMP_THIS(0x642B20); }
 
+	void GetPercentByIndex(int i)
+		{ JMP_THIS(0x643E90); }
 
-	int field_0;
+    void SetPercentByIndex(int i, double percent, int x = -1, int y = -1)
+		{ JMP_THIS(0x643C50); }
+
+    int field_0;
 	LoadProgressManager *LoadManager;
 	double PlayerProgresses[8];
 	int MainProgress;

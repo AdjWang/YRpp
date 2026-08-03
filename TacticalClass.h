@@ -108,6 +108,9 @@ public:
 					 const RectangleStruct& to)
 		{ JMP_THIS(0x6D97D0); }
 
+	void DrawEndGameGraphics(const wchar_t* str)
+		{ JMP_THIS(0x6D4E20); }
+
 public:
 
 	wchar_t ScreenText[64];
