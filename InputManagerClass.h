@@ -10,6 +10,9 @@ class InputManagerClass {
 public:
 	static constexpr reference<InputManagerClass*, 0x87F770u> const Instance{};
 
+	bool HandleKeyboard(uint16_t button, bool is_up)
+		{ JMP_THIS(0x54F200); }
+
 	byte DoSomething()
 		{ JMP_THIS(0x54F720); }
 
@@ -31,16 +34,15 @@ public:
 			|| this->IsKeyPressed(GameOptionsClass::Instance->KeyForceSelect2);
 	}
 
-protected:
   int MouseClickPos_x;
   int MouseClickPos_y;
   int field_8;
   int field_C;
   int field_10;
-  byte Keycodes_b[256];
-  WORD Keycodes_w[256];
-  int field_314;
-  int field_318;
+  char KeyState[256];
+  wchar_t Buffer[256];
+  int Head;
+  int Tail;
 };
 
 } // namespace yrpp

@@ -75,6 +75,7 @@ public:
 	BYTE unknown_byte_5549;
 	BYTE unknown_byte_554A;
 	PROTECTED_PROPERTY(BYTE, padding_554B);
+	BYTE IsRightMouseButtonDown;  // 554C
 };
 
 class NOVTABLE MouseClass : public ScrollClass
@@ -94,6 +95,9 @@ public:
 
 	//DisplayClass
 	virtual MouseCursorType GetLastMouseCursor() override RT(MouseCursorType);
+
+	void HandleMapMouse(HWND hwnd, UINT* msgs, WPARAM* wparam, LPARAM* lparam)
+		{ JMP_THIS(0x6930A0); }
 
 	bool MouseCursorIsMini;
 	PROTECTED_PROPERTY(BYTE, unknown_byte_5559[3]);

@@ -36,6 +36,7 @@ public:
 
 	static constexpr reference<bool, 0xA8E9A0u> const IsActive{};
 	static constexpr reference<bool, 0xA8ED80u> const IsFocused{};
+	static constexpr reference<bool, 0xA8ED9Cu> const UserInputLocked{};
 	static constexpr reference<int, 0xA8EDA0u> const SpecialDialog{};
 	static constexpr reference<bool, 0xAC48D4> const PCXInitialized{};
 
