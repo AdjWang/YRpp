@@ -685,7 +685,7 @@ public:
 	int              CurrentBurstIndex;
 	DECLARE_PROPERTY(CDTimerClass, TargetLaserTimer);
 	short            unknown_short_3C8;
-	WORD             unknown_3CA;
+	WORD             SinkingWaterLine;  // in screen space
 	bool             CountedAsOwned; // is this techno contained in OwningPlayer->Owned... counts?
 	bool             IsSinking;
 	bool             WasSinkingAlready; // if(IsSinking && !WasSinkingAlready) { play SinkingSound; WasSinkingAlready = 1; }
