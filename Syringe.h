@@ -272,13 +272,13 @@ namespace SyringeData {
 };
 
 #define DECLHOST(exename, checksum) \
-namespace SyringeData { namespace Hosts { __declspec(allocate(".syexe00")) hostdecl _hst__ ## exename  { checksum, #exename }; }; };
+namespace SyringeData { namespace Hosts { __declspec(dllexport) __declspec(allocate(".syexe00")) hostdecl _hst__ ## exename  { checksum, #exename }; }; };
 
 #define DECLHOOK(hook, funcname, size) \
-namespace SyringeData { namespace Hooks { __declspec(allocate(".syhks00")) hookdecl _hk__ ## funcname  {  hook, size, #funcname }; }; };
+namespace SyringeData { namespace Hooks { __declspec(dllexport) __declspec(allocate(".syhks00")) hookdecl _hk__ ## funcname  {  hook, size, #funcname }; }; };
 
 #define DECLHOOK_CASCADE(hook, funcname, size) \
-namespace SyringeData { namespace Hooks { __declspec(allocate(".syhks01")) hookdecl _hk__ ## funcname  {  hook, size, #funcname }; }; };
+namespace SyringeData { namespace Hooks { __declspec(dllexport) __declspec(allocate(".syhks01")) hookdecl _hk__ ## funcname  {  hook, size, #funcname }; }; };
 
 #endif // SYR_VER == 2
 
