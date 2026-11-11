@@ -11,7 +11,7 @@ struct VoxelSectionTailer;
 
 class VoxLib {
 public:
-	bool Initialized;
+	bool LoadFailed; // Original field at +0: constructor sets true when ReadFile fails; false means loaded successfully.
 	DWORD CountHeaders;
 	DWORD CountTailers;
 	DWORD TotalSize;

@@ -73,7 +73,7 @@ public:
 	SHPStruct * Image;
 	int         ImageFrameIndex;
 	DWORD       RefCount;
-	byte        field_10;
+	byte        Captured;
 	byte        field_11;
 	byte        field_12;
 	byte        field_13;
