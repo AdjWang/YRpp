@@ -58,7 +58,12 @@ public:
 	// virtuals
 
 	virtual ~LoadOptionsClass()
-		{ JMP_THIS(0x55A0D0); }
+	{
+		// This address is the scalar deleting destructor (ret 4), not the
+		// no-argument destructor. The stack object must not be deallocated.
+		using DeletingDestructor = LoadOptionsClass* (__thiscall *)(LoadOptionsClass*, unsigned int);
+		reinterpret_cast<DeletingDestructor>(0x55A0D0)(this, 0u);
+	}
 
 	virtual bool LoadMission(const char* pFilename) const
 		{ JMP_THIS(0x559D60); }
