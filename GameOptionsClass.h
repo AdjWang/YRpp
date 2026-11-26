@@ -14,6 +14,18 @@ public:
 	int GetAnimSpeed(int rate)
 		{ JMP_THIS(0x5FB2E0); }
 
+	void Save()
+		{ JMP_THIS(0x5FAD10); }
+	
+	void SetScoreVolume(float volume, int preview)
+		{ JMP_THIS(0x5FA4A0); }
+
+	void SetSoundVolume(float volume, int preview)
+		{ JMP_THIS(0x5FA510); }
+
+	void SetVoiceVolume(float volume, int preview)
+		{ JMP_THIS(0x5FA590); }
+
 	int GameSpeed;
 	int Difficulty;
 	int CampDifficulty;
