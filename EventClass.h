@@ -214,6 +214,12 @@ public:
 		JMP_THIS(0x4C6650);
 	}
 
+	// NoPayload
+	explicit EventClass(int houseIndex, EventType eventType)
+	{
+		JMP_THIS(0x4C66C0);
+	}
+
 	// Archive & Planning_Connect
 	explicit EventClass(int houseIndex, EventType eventType, TargetClass src, TargetClass dest)
 	{
