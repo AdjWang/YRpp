@@ -51,7 +51,6 @@ public:
 	NodeElement* begin() const { return IndexTable; }
 	NodeElement* end() const { return &IndexTable[IndexCount]; }
 
-private:
 	bool IncreaseTableSize(int nAmount);
 	bool IsArchiveSame(TKey id) const;
 	void InvalidateArchive();
